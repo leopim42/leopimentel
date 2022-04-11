@@ -209,7 +209,7 @@ nav li{
 /*---------- Header ----------*/
 
 .headerHome{
-    height: 92%;
+    height: 96%;
     width: 100%;
     position: relative;
     display: flex;
@@ -535,7 +535,7 @@ footer a:not(#fMail,#fTel){
 
 .headerGalerie{
     height: 50%;
-    background-image: url("img/bannierreHomepage.jpg");
+    background-image: linear-gradient(transparent, black), url("img/bannierreHomepage.jpg");
     background: cover;
     display: flex;
 }
@@ -628,6 +628,7 @@ footer a:not(#fMail,#fTel){
 
 .galerieContact{
     height: 50%;
+    background-color: red;
 }
 
 .galerieContactF{
@@ -644,68 +645,47 @@ footer a:not(#fMail,#fTel){
     width: 15%;
     margin: 0 auto;
 }
-/*
-
-.galerieProjets{
-    height: 60em;
-    background-color: yellow;
-}
-
-.galerieProjets h2{
-    display: block;
-    height: 20%;
-    text-align: center;
-    padding-top: 2em;
-    font-size: 2.5em;
-}
-
-.galerieGP{
-    display: grid;
-    text-align: center;
-    height: 80%;
-}
-
-.galerieP1{
-    grid-template-columns: 1fr;
-    background-color: purple;
-    height: 100%;
-    
-}
-
-.galerieP1 img{
-    width: 30%;
-    padding: 1em;
-}
-
-.galerieP1 .cta{
-    display: block;
-    width: 15%;
-    margin: 0 auto;
-}
-.galerieP23{
-    display: grid;
-    grid-template-columns: 1fr 1fr
-}
-
-#galerieP2{
-    background-color: blue;
-}
-
-#galerieP3{
-    background-color: black;
-}
 
 
-.galeriePhoto{
-    height: 100%;
-    background-color: green;
-}
+/*---------- Services ----------*/
 
-.galerieContact{
+.headerServices{
     height: 50%;
-    background-color: blue;
+    background-image: linear-gradient(transparent, black), url("img/bannierreHomepage.jpg");
+    background: cover;
+    display: flex;
 }
-*/
+
+.servicesCategorie{
+    text-align: center;
+    margin: 2em auto;
+}
+
+.servicesG{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2em 0;
+}
+
+.servicesG img{
+    width: 20%;
+}
+
+.servicesG div{
+    text-align: left;
+    padding: 1em;
+    height: 15em;
+}
+
+.servicesG a{
+    text-decoration: underline;
+    color: #8e5d43;
+    text-align: center;
+}
+
+#service1{
+    background: linear-gradient(transparent, black) url("img/galerie/a.jpg");
+}
 
 /*---------- Responsive ----------*/
 
