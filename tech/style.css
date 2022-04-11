@@ -6,38 +6,34 @@
 
 @import url("https://use.typekit.net/fnc3loy.css");
 
-*{
-	margin: 0;	
-	padding: 0;
-	font-family: acumin-pro;
-	color: #333333;
-	text-align: justify;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: acumin-pro;
 }
-strong{
-	color:  #8e5d43;
+
+html, body{
+    height: 100%;
 }
+
 span{
 	color: #8e5d43;
 	font-weight: 700;
 }
-h2{
-	color: #8e5d43;
-	font-weight: 700;
-	font-size: 2.2rem;
-	text-align: center;
+
+strong{
+	color:  #8e5d43;
 }
 
-
-body, html{
-	height: 100%;
-}
-
-/*---------- Menu Moderne ----------*/
+/*---------- Navigation ----------*/
 
 nav{
 	position: fixed;
 	width: 100%;
-	margin: 0;
+    height: 4em;
 	z-index: 900;
 	
 	display: flex;
@@ -47,31 +43,39 @@ nav{
 	-webkit-box-pack: center;
 	justify-content: center;
 }
+
 #navMask{
 	position: absolute;
-	z-index: 1;
+    top: 0;
+    left: 0;
+    right: -2em;
+    bottom: 0;
+    z-index: 1;
 }
 
-#navContent{
+#navContenu{
 	position: absolute;
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	-webkit-box-align: center;
 	align-item: center;
 	width: 100%;
+    height: 4em;
+    max-width: 110em;
+    padding: 0 1.5rem;
 }
 
-#logoNav{
+.navLogo{
 	display: flex;
 	flex-shrink: 0;
 	padding: 0;
 	margin-right: 1rem;
 	z-index: 950;
 }
-#logoNav a{
+.navLogo a{
 	display: inline-flex;
 }
-#logoNav img{
+.navLogo img{
 	height: 5em;
 	background-color: #333333;
 	padding: 1em;
@@ -81,24 +85,31 @@ nav{
 	top: 0;
 	left: 0;
 }
-#navListe{
-	display: block;
-	z-index: 900;
-}
 nav ul{	
 	display: grid;
 	max-width: 62em;
 	margin: 0;
 	list-style-type: none;
 	background-color: #333333;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit,minmax(6rem,auto));
+    position: static;
+    bottom: auto;
+    left: 0;
+    height: 4em;
+    width: auto;
 }
 nav li{
 	display: flex;
 	margin: 0 2em;
+    padding: 0;
 }
+
 .navBouton{
 	display: flex;
 	align-item: center;
+    position: relative;
+		flex-direction: row;
 }
 .navBouton a{
 	position: relative;
@@ -108,508 +119,27 @@ nav li{
 	align-items: center;
 	text-decoration: none;
 	color: white;
+	font-size: 1.4em;
 }
 .navBouton a:hover{
 	color: #8E5D43;
 }
-#navEspaceH{
-	height: 4em;
-}
-#navEspaceB{
-	height: 3em;
-	display: none;
-}
 
-
-/*---------- Image Intro ----------*/
-header{
-	position: relative;
-	color: white;
-	background-image: url("img/banniere/bannierreHomepage.jpg");
-	height: 60%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.headerAccueil{
-	height: 100%;
-}
-header h1{
-	width: 100%;
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 3em;
-	text-shadow: 0.1em 0.1em 0.1em black;
-	color: white;
-	text-align: center;
-	font-weight: 400;
-}
-header p:not(#ctaHeader){
-	position: absolute;
-	top: 38%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 1.2em;
-	text-shadow: 0.1em 0.1em 0.1em black;
-	color: #ebeced;
-	text-align: center;
-	font-weight: 400;
-	width: 100%;
-}
-
-#ctaHeader{
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	transform: translate(-45%, -50%);
-	transition-duration: 0.5s;
-}
-header a{
-	color: white;
-	text-decoration: none;
-}
-header a:hover{
-	background-color: transparent;
-}
-
-/*---------- Section Qui suis-je ----------*/
-
-#quisuisje img{
-	width: 15em;
-	margin: 0 2em 1em;
-	float: left;
-	border-radius: 0.5em;
-}
-#quisuisje h2{
-	margin-bottom: 1.5em;
-}
-#quisuisje{
-	margin-bottom: 5em;
-display: block;
-}
-#quisuisje p{
-	margin: 1em 0;
-}
-
-
-/*---------- Section Réalisations ----------*/
-
-.section:not(.sectionC){
-	margin: 2em 0;
-	width: 65%;
-	text-align: center;
-	margin: 5em auto;
-}
-.section p{
-	font-size: 1.1em;
-}
-.section a:not(.cta){
-	color: #8e5d43;
-	text-align: center;
-}
-
-
-/*---------- Prestations ----------*/
-
-.cadre{
-	display: block;
-	width: 100%;
-	padding: 2em;
-	height: 12em;
-	background-color: black;
-	border-radius: 0.5em;
-	margin: 3em auto;
-	transition: transform 0.5s;
-}
-.cadre p, h3, a, li{
-	color: white;
-	text-decoration: none;
-		text-align: center;
-}
-.cadre:hover{
-	transform: scale(1.05);
-	transition-duration: 0.5s, 0.5s;
-}
-.cadre ul{
-	list-style: none;
-	margin: 0.5em;
-}
-
-.cadre h3{
-	font-size: 2em;
-}
-.cadre  p{
-	font-size: 1.2em;
-}
-
-#real h2{
-	font-size: 2em;
-}
-
-
-/*---------- Services ----------*/
-
-
-.container{
-	position: relative;
-	width: 30%;
-	margin-top: 20px;
-}
-
-.container img{
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.overlay{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #8e5d43;
-	overflow: hidden;
-	width: 100%;
-	height: 0;
-	transition: .5s ease;
-}
-
-.container:hover .overlay {
-  height: 100%;
-}
-
-.textDefil {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.vignette{
-	display: inline-block;
-	margin: 1em 0;
-}
-.vignette img{
-	width: 50%;
-	margin: 1.5em;
-	float: left;
-}
-
-.cta{
-	border-radius: 0.3em;
-	background-color: #3d455c;
-	border: none;
-	text-align: center;
-	font-size: 1.6em;
-	padding: 0.6em;
-	width: 12em;
-	transition: all 0.5s;
-	cursor: pointer;
-}
-
-.cta span{
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-	color: white;
-	font-weight: 400;
-}
-
-.cta span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
-
-.cta:hover span{
-	padding-right: 25px;
-}
-
-.cta:hover span:after{
-	opacity: 1;
-	right: 0;
-}
-
-
-/*---------- Images ----------*/
-
-.sectionR{
-	width: 85%;
-	text-align: center;
-	margin: 2em auto;
-}
-.sectionR img{
-	padding: 0;
-	margin: 0.4em;
-	width: 30%;
-}
-.sectionR h2{
-	margin-bottom: 1.5em;
-}
-
-
-/*---------- Contact ----------*/
-
-.sectionC{
-	width: 60%;
-	margin: 0 auto;
-}
-
-.sectionC a{
-	color: #333333;
-}
-
-.column{
-	float: left;
-	padding: 0 0.5em;
-	width: 30%;
-}
-
-.row{
-	margin: 1em -0.8em;
-}
-
-.row::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.card{
-	box-shadow: 0 0.2em 0.4em 0 #333333;
-	padding: 1em;
-	text-align: center;
-}
-
-.card h3, .card p{
-	color: white;
-}
-
-/*----------Timeline----------*/
-
-.sectionTimeline {
-	background-color: #A7BBC7;
-	padding: 2em 0
-}
-.sectionTimeline h2 {
-	color: white;
-}
-
-.timeline, .timelineContainer, .timelineContent, .timelineLeft, .timelineRight{
-	box-sizing: border-box;
-}
-
-.timelineContent > h3 {
-	color: #8e5d43;
-	font-size: 1.8em;
-}
-.timelineContent > p {
-	font-size: 1.2em;
-}
-
-.timeline{
-	position: relative;
-	margin: 2em auto 0;
-	box-sizing: border-box;
-}
-
-.timeline::after{
-	content: '';
-	position: absolute;
-	width: 6px;
-	background-color: white;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	margin-left: -3px;
-}
-
-.timelineContainer {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-.timelineContainer::after {
-	content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #8e5d43;
-  top: 15px;
-  border-radius: 50%;
-	z-index: 2;
-}
-
-.timelineLeft {
-  left: 0;
-}
-
-.timelineRight {
-  left: 50%;
-}
-
-.timelineLeft::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-.timelineRight::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-.timelineRight::after {
-  left: -16px;
-}
-
-.timelineContent {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-
-/*---------- Footer ----------*/
-
-footer{
-	background-color: #3d455c;
-}
-footer ul{
-	list-style: none;
-	padding: 1em;
-	float: right;
-}
-footer li a{
-	color: white;
-	text-decoration: none;
-
-}
-footer p{
-	text-align: left;
-	padding: 0.5em;
-	color: white;
-}
-footer img{
-	display: inline-block;
-	height: 3em;
-	padding: 0.8em;
-	transition-duration: 0.5s;
-}
-footer img:hover{
-	transform: scale(1.1);
-	transition-duration: .5s;
-}
-
-
-/*---------- Responsive ---------*/
-
-@media all and (min-width: 60em){ /*Affichage PC*/
-	.bannPC{
-		display: block;
-	}
-	.bannResponsive{
-		display: none;
-	}
-	nav{
-		height: 4em;
-	}
-	#navMask{
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: -2em;
-		bottom: 0;
-	}
-	#navContent{
-		height: 4em;
-		max-width: 110em;
-		padding: 0 1.5rem;
-	}
-	nav ul{
-		padding: 0;
-		grid-template-columns: repeat(auto-fit,minmax(6rem,auto));
-		position: static;
-		bottom: auto;
-		left: 0;
-		height: 4em;
-		width: auto;
-	}
-	nav li{
-		padding: 0;
-	}
-	.navBouton{
-		position: relative;
-		flex-direction: row;
-	}
-	.navIcon{
+.navIcon{
 	height: 0.8em;
 	margin: 0 0.5em;
 	}
-	.navBouton a{
-	position: relative;
-	height: 100%;
-	font-size: 1.4em;
-	}
+
+.navEspaceH{
+    height: 4em;
 }
-@media all and (min-width: 48em) and (max-width: 60em){
-	.bannPC{
-		display: block;
-	}
-	.bannResponsive{
-		display: none;
-	}
-	nav{
-		height: 4em;
-	}
-	header h1{
-		font-size: 2.5rem;
-		transform: translate(-50%, -10%);
-	}
-	#navMask{
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: -2em;
-		bottom: 0;
-	}
-	#navContent{
-		height: 4em;
+
+@media all and (min-width: 48em) and (max-width: 60em){ /*Intermédiaire*/
+    .navContenu{
 		max-width: 110em;
-		padding: 0 1.5rem;
+		padding: 0 1rem;
 	}
-	nav ul{
+    nav ul{
 		padding: 0;
 		grid-template-columns: repeat(auto-fit,minmax(6rem,auto));
 		position: static;
@@ -618,43 +148,21 @@ footer img:hover{
 		height: 4em;
 		width: auto;
 	}
-	nav li{
+    nav li{
 		padding: 0;
 		margin: 0 1em;
 	}
-	.navBouton{
-		position: relative;
-		flex-direction: row;
-	}
 	.navIcon{
 	height: 0.8em;
 	margin: 0 0.5em;
 	}
 	.navBouton a{
-	position: relative;
-	height: 100%;
 	font-size: 1.2em;
 	}
-	.container{
-		width: 32%;
-	}
-	header p:not(#ctaHeader){
-		top: 40%;
-		font-size: 1em;
-	}
-	
 }
+
 @media all and (max-width: 48em){ /*Smartphone*/
-	.bannPC{
-		display: none;
-	}
-	.bannResponsive{
-		display: block;
-	}
-	#ctaHeader{
-		display: none;
-	}
-	nav{
+    nav{
 		height: 3em;
 	}
 	#navContent{
@@ -692,82 +200,598 @@ footer img:hover{
 		height: 1.2em;
 		margin-bottom: 0.1rem;
 	}
-	header h1{
-		font-size: 2.2em;
-		margin-top: 2em;
-		transform: translate(-50%, -80%)
-	}
-	header p:not(#ctaHeader){
-		top: 45%;
-		transform: translate(-50%, -50%);
-	}
-	#quisuisje img{
-		width: 100%;
-		margin: 1em auto;
-	}
-	#navEspaceH{
-		height: 3em;
-	}
-	#navEspaceB{
-		display: block;
-		height: 4em;
-	}
-	.section{
-		width: 85%;
-		margin: 3em auto;
-	}
-	.sectionR img{
-		width: 45%;
-	}
-	.sectionR{
-		width: 98%;
-	}
-	.sectionC{
-		width: 100%;
-	}
-	.cadre{
-		width: 80%;
-	}
-	.homeService{
-		display: none;
-		height: 0;
-	}
-	#logoNav img{
-		height: 4em;
-		border-radius: 0 0 4em;
-	}
-	.timeline::after {
-		left: 31px;
-	}
-	.timelineContainer{
-		width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-	}
-	.timelineContainer::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
-	.timelineLeft::after, .timelineRight::after{
-		left: 15px;
-	}
-	.timelineRight{
-		left: 0;
-	}
-	.column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-	footer img{
-		display: none;
-	}
-	footer ul{
-		float: none;
-	}
-	footer p{
-		text-align: center;
-	}
+    .navEspaceH{
+        height: 6%;
+    }
 }
+
+/*-----------------------------------------------------------------*/
+/*---------- Header ----------*/
+
+.headerHome{
+    height: 92%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-image: url("img/bannierreHomepage.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+h1{
+    margin: auto 3em;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.headerHome a{
+    position: absolute;
+    bottom: 6em;
+    left: 10em;
+}
+
+.cta{
+	border-radius: 0.3em;
+	background-color: #3d455c;
+	border: none;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 0.6em;
+	width: 12em;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.cta span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	color: white;
+	font-weight: 400;
+}
+
+.cta span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.cta:hover span{
+	padding-right: 25px;
+}
+
+.cta:hover span:after{
+	opacity: 1;
+	right: 0;
+}
+
+
+/*---------- Grille Services ----------*/
+
+.grilleServices{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 50%;
+}
+
+.grilleServices div{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    transition-duration: 0.5s;
+}
+
+
+
+.grilleServices > a:hover{
+    font-size: 1.2em;
+}
+
+#grille1{
+    position: relative;
+    background-image: linear-gradient(transparent, black), url("img/s1photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#grille2{
+    position: relative;
+    background-image: linear-gradient(transparent, black), url("img/s2video.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#grille3{
+    position: relative;
+    background-image: linear-gradient(transparent, black), url("img/s3multimedia.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*---------- Qui suis-je ? ----------*/
+
+
+.bio{
+    background-color: black;
+    margin: 0;
+    padding: 8%;
+    position: relative;
+    height: 85%;
+    display: block;
+}
+
+.bio h2 {
+    font-size: 2.2em;
+    text-align: center;
+    color: white;
+}
+
+.bio p{
+    font-size: 1.1em;
+    margin: auto;
+    width: 75%;
+    margin-top: 1em;
+    color: white;
+    text-align: justify;
+}
+
+.bio .cta{
+    display: block;
+    margin: 3em auto
+}
+
+
+/*---------- Chiffres clés ----------*/
+
+.chiffreCles{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    box-shadow: 0.1em 0.1em 1em #333333;
+    position: absolute;
+    margin: -10% auto 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.grilleChiffres{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 10em;
+}
+
+.grilleChiffres h3{
+    color: #8e5d43;
+    font-size: 2.5em;
+}
+
+.chiffreCles h2{
+    text-align: center;
+    margin: 1em;
+}
+
+.grilleChiffres p{
+    font-size: 1.2em;
+}
+
+.espaceChiffres{
+    height: 50%;
+}
+
+
+
+/*---------- Projets ----------*/
+
+.projets{
+    height: 80%;
+    dispay: block;
+}
+.grilleProjets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em;
+    height: 18em;
+}
+
+.grilleProjets div{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    transition-duration: 0.5s;
+}
+
+.grilleProjets > a:hover{
+    font-size: 1.2em;
+}
+
+.projets h2{
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.projets .cta{
+    display: block;
+    margin: 5em auto;
+}
+
+#projet1{
+    background-color: red;
+    position: relative;
+}
+#projet2{
+    background-color: yellow;
+    position: relative;
+}
+#projet3{
+    background-color: red;
+    position: relative;
+}
+
+
+/*Contact*/
+.contact{
+    height: 92%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banContact{
+    background-color: red;
+    display: flex;
+}
+
+.contact h1{
+    text-shadow: none;
+    margin: 3.5em auto;
+}
+
+.contactContenu{
+    text-align: center;
+}
+
+
+.contactContenu h2{
+    margin: 2em 1em 1em;
+    font-size: 2em;
+}
+
+.contactContenu a{
+    font-size: 1.2em;
+}
+
+.contactReseaux li{
+    transition-duration: 0.5s;
+}
+.contactReseaux li:hover{
+    transform: scale(110%);
+    transition-duration: 0.5s;
+}
+
+.contactContenu a:hover{
+    text-decoration: underline;
+}
+
+.contactReseaux{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contactReseaux img{
+    height: 5em;
+}
+
+/*---------- Footer ----------*/
+
+.footerListe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #333333;
+}
+
+footer *{
+    color: white;
+}
+
+.footerListe div{
+    text-align: center;
+    margin: 1em;
+}
+
+footer a:not(#fMail,#fTel){
+    text-decoration: underline;
+}
+
+.footerReseaux{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    text-align: center;
+    background-color: #333333;
+
+}
+
+.footerReseaux div{
+    border: solid white 0.1em;
+    padding: 0.4em 0;
+}
+
+
+/*---------- Galerie ----------*/
+
+.headerGalerie{
+    height: 50%;
+    background-image: url("img/bannierreHomepage.jpg");
+    background: cover;
+    display: flex;
+}
+
+.headerGalerie h1{
+    margin: auto auto auto 15%;
+}
+
+.galerieTopProjet{
+    background: black;
+    position: relative;
+    padding-bottom: 1.5em;
+}
+
+.galerieTopProjet h2{
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2em;
+    color: white;
+}
+
+.img{
+    margin: 2em auto;
+    height: 25em;
+    background-color: red;
+    width: 60%;
+}
+
+.galerieTopProjet p{
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%);
+}
+
+.galerieTopProjet .cta{
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+}
+
+.galerieProjets{
+    display: block;
+    background-color: black;
+    padding: 2em 0;
+}
+
+.galerieProjets h2{
+    font-size: 1.4em;
+    text-align: center;
+    color: white;
+}
+
+.galerieProjetsG{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imgP{
+    height: 10em;
+    width: 60%;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.galerieProjets .cta{
+    display :block;
+    width: 10%;
+    margin: 1em auto;
+}
+
+
+.galeriePhoto h2{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 2em auto;
+}
+.galeriePG{
+    width: 95%;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.galeriePG img{
+    width: 100%;
+}
+
+.galerieContact{
+    height: 50%;
+}
+
+.galerieContactF{
+    height: 80%;
+    display: flex;
+}
+
+.galerieContact h2{
+    margin: auto;   
+}
+
+.galerieContact .cta{
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+}
+/*
+
+.galerieProjets{
+    height: 60em;
+    background-color: yellow;
+}
+
+.galerieProjets h2{
+    display: block;
+    height: 20%;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2.5em;
+}
+
+.galerieGP{
+    display: grid;
+    text-align: center;
+    height: 80%;
+}
+
+.galerieP1{
+    grid-template-columns: 1fr;
+    background-color: purple;
+    height: 100%;
+    
+}
+
+.galerieP1 img{
+    width: 30%;
+    padding: 1em;
+}
+
+.galerieP1 .cta{
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+}
+.galerieP23{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+#galerieP2{
+    background-color: blue;
+}
+
+#galerieP3{
+    background-color: black;
+}
+
+
+.galeriePhoto{
+    height: 100%;
+    background-color: green;
+}
+
+.galerieContact{
+    height: 50%;
+    background-color: blue;
+}
+*/
+
+/*---------- Responsive ----------*/
+
+@media all and (min-width: 48em) and (max-width: 60em){ /*Intermédiaire*/
+    h1{
+        margin: auto 1em;
+    }
+    .bio{
+    padding: 4%;
+    height: 90%;
+    }
+
+    .bio h2 {
+        margin-bottom: 1em;
+    }
+
+    .bio p{
+        width: 85%;
+    }
+
+    .bio .cta{
+        margin: 3em auto
+    }
+    .chiffreCles{
+    width: 60%;
+    height: 50%;
+    margin: -6% auto 0;
+    }
+    .contactReseaux{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .contactReseaux img{
+        height: 3em;
+    }
+}
+
+@media all and (max-width: 48em){ /*Smartphone*/
+    h1{
+        margin: auto 0.1em;
+        font-size: 3em;
+        width: 100%;
+    }
+    .grilleServices{
+    grid-template-columns: 1fr;
+    height: 100%;
+    }
+    .bio{
+    padding: 4%;
+    height: 115%;
+    }
+
+    .bio h2 {
+        margin-bottom: 1em;
+    }
+
+    .bio p{
+        width: 85%;
+    }
+
+    .bio .cta{
+        margin: 3em auto
+    }
+    .chiffreCles{
+        margin-top: 2em;
+        width: 85%;
+    }
+    .espaceChiffres{
+        height: 60%;
+    }
+    .grilleProjets{
+    grid-template-columns: 1fr;
+    height: 100%;
+    grid-auto-columns: 30em;
+    }
+    .espaceFooter{
+        height: 35%;
+    }
+    .espaceNavBas{
+        height: 4em;
+    }
+    .contact{
+        display: block;
+        height: 150%;
+    }
+}
+
+/*----------  ----------*/
