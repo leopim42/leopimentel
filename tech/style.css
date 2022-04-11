@@ -503,31 +503,26 @@ h1{
     background-color: #333333;
 }
 
+footer svg{
+    transform: translate(0, 10%);
+}
+
 footer *{
     color: white;
+    display: inline;
 }
 
 .footerListe div{
     text-align: center;
-    margin: 1em;
+    transform: translate(0, -100%)
 }
 
-footer a:not(#fMail,#fTel){
+.footerListe a{
+    margin-left: 2em;
+}
+
+.footerListe a:hover{
     text-decoration: underline;
-}
-
-.footerReseaux{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    text-align: center;
-    background-color: #333333;
-
-}
-
-.footerReseaux div{
-    border: solid white 0.1em;
-    padding: 0.4em 0;
 }
 
 
@@ -771,6 +766,9 @@ footer a:not(#fMail,#fTel){
     .contact{
         display: block;
         height: 150%;
+    }
+    .footerListe {
+    grid-template-columns: 1fr;
     }
 }
 
