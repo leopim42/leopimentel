@@ -300,20 +300,20 @@ h1{
 
 #grille1{
     position: relative;
-    background-image: linear-gradient(transparent, black), url("img/s1photo.jpg");
+    background-image: linear-gradient(transparent, black), url("img/s1photo.webp");
     background-size: cover;
     background-position: center;
 }
 
 #grille2{
     position: relative;
-    background-image: linear-gradient(transparent, black), url("img/s2video.jpg");
+    background-image: linear-gradient(transparent, black), url("img/s2video.webp");
     background-size: cover;
     background-position: center;
 }
 #grille3{
     position: relative;
-    background-image: linear-gradient(transparent, black), url("img/s3multimedia.jpg");
+    background-image: linear-gradient(transparent, black), url("img/s3multimedia.webp");
     background-size: cover;
     background-position: center;
 }
@@ -514,7 +514,7 @@ footer *{
 
 .footerListe div{
     text-align: center;
-    transform: translate(0, -100%)
+    transform: translate(0, -100%);
 }
 
 .footerListe a{
