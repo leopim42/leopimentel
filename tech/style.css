@@ -328,8 +328,8 @@ h1{
     margin: 0;
     padding: 8%;
     position: relative;
-    height: 85%;
     display: block;
+    min-height: 35em;
 }
 
 .bio h2 {
@@ -361,7 +361,7 @@ h1{
     background-color: white;
     box-shadow: 0.1em 0.1em 1em #333333;
     position: absolute;
-    margin: -10% auto 0;
+    margin: -5% auto 0;
     left: 50%;
     transform: translate(-50%);
 }
@@ -396,7 +396,6 @@ h1{
 /*---------- Projets ----------*/
 
 .projets{
-    height: 80%;
     dispay: block;
 }
 .grilleProjets{
@@ -689,66 +688,6 @@ footer *{
     font-size: 1.1em;
     transition-duration: 0.5s;
 }
-/*
-.servicesCategorie{
-    background: black;
-}
-
-.servicesCategorie p, .servicesCategorie h3{
-    color: white;
-}
-
-.servicesG{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.servicesArticle{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 1em;
-    height: 10em;
-    position: relative;
-}
-
-.servicesArticle h3{
-    text-align: end;
-    margin: 0.5em 0;
-}
-
-.servicesArticle p{
-    text-align: center;
-    margin: 1em;
-}
-
-.servicesArticle a{
-    color: #8e5d43;
-    text-decoration: underline;
-    position: absolute;
-    bottom: 1.5em;
-    right: 1.5em;
-}
-
-#service1{
-    background-color: red;
-}
-#service2{
-    background-color: red;
-}
-#service3{
-    background-color: red;
-}
-#service4{
-    background-color: red;
-}
-#service5{
-    background-color: red;
-}
-#service6{
-    background-color: red;
-}
-
-*/
 /*---------- Responsive ----------*/
 
 @media all and (min-width: 48em) and (max-width: 60em){ /*Intermédiaire*/
@@ -789,8 +728,15 @@ footer *{
 @media all and (max-width: 48em){ /*Smartphone*/
     h1{
         margin: auto 0.1em;
-        font-size: 3em;
+        font-size: 2.5em;
         width: 100%;
+    }
+    .headerHome a{
+        position: absolute;
+        left: 1em;
+        width: 50%;
+        font-size: 1.1em;
+        bottom: 10em;
     }
     .grilleServices{
     grid-template-columns: 1fr;
@@ -798,7 +744,6 @@ footer *{
     }
     .bio{
     padding: 4%;
-    height: 115%;
     }
 
     .bio h2 {
@@ -821,11 +766,7 @@ footer *{
     }
     .grilleProjets{
     grid-template-columns: 1fr;
-    height: 100%;
     grid-auto-columns: 30em;
-    }
-    .espaceFooter{
-        height: 35%;
     }
     .espaceNavBas{
         height: 4em;
@@ -835,7 +776,11 @@ footer *{
         height: 150%;
     }
     .footerListe {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    
+    .footerListe a{
+        margin-left: 1em;
     }
 }
 
