@@ -664,7 +664,6 @@ footer *{
 
 .servicesCat{
     margin: 2em auto;
-    width: 80%;
 }
 
 .servicesCat h2{
@@ -681,7 +680,7 @@ footer *{
 .servicesArticle{
     height: 10em;
     display: flex;
-    background-color: red;
+    background-color: #333333;
     border: solid black 0.1em;
 }
 
@@ -694,6 +693,10 @@ footer *{
 .servicesArticle a:hover{
     font-size: 1.1em;
     transition-duration: 0.5s;
+}
+
+.servicesArticle h3, .servicesArticle p{
+    color: white;
 }
 
 
