@@ -872,12 +872,13 @@ footer *{
 
 
 #preloader {
-    background: #333333 url("favicon.svg") no-repeat center center;
-    background-size: 10%;
+    background: #000000 url("loader.gif") no-repeat center center;
+    background-size: 8%;
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 999;
 }
+
 
 /*----------  ----------*/
