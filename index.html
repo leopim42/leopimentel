@@ -13,6 +13,9 @@
 	</head>
 
 	<body>
+        
+        <div id="preloader"></div>
+        
         <!-- Menu de navigation -->
         <nav>
             <div class="navMask">
@@ -142,5 +145,16 @@
             </div>
         </footer>
         <div class="espaceNavBas"></div>
+        
+        
+        
+        
+        
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })                             
+        </script>
 	</body>
 </html>
