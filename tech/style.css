@@ -458,13 +458,15 @@ h1{
 }
 
 .banContact{
-    background: linear-gradient(transparent 50%, white), red;
+    background: linear-gradient(transparent 50%, white), linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("img/contact.webp");
+    background-position: center;
+    background-size: cover;
     display: flex;
 }
 
 .contact h1{
     text-shadow: none;
-    margin: 35% auto;
+    margin: 30% auto;
 }
 
 .contactContenu{
@@ -680,7 +682,7 @@ footer *{
 }
 
 .servicesArticle{
-    height: 10em;
+    height: 12em;
     display: flex;
     /*background-color: #333333;*/
     border: solid black 0.1em;
@@ -711,10 +713,10 @@ footer *{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/services/association.webp");
 }
 #service3{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/services/association.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("img/services/architecture.webp");
 }
 #service4{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/services/association.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("img/services/book.webp");
 }
 #service5{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/services/association.webp");
