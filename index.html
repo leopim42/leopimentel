@@ -7,6 +7,7 @@
 		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy">
 		<meta name="author" content="Léo PIMENTEL">
 		<meta name="copyright" content="LP">
+        <link rel="preconnect" href="https://p.typekit.net">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
 		<link rel="stylesheet" href="tech/style.css">
 		<link rel="icon" href="tech/favicon.svg">
@@ -22,11 +23,11 @@
         </script>
         
 	</head>
-
-	<body>
+    
+    <div id="preloader"></div>
+    
+	<body>  
         
-        <div id="preloader"></div>
-                
         <!-- Menu de navigation -->
         <nav>
             <div class="navMask">
@@ -116,14 +117,13 @@
 
         <!-- Projets-->
         <section class="projets">
-            <h2>Projets Importants</h2>
-            <div class="grilleProjets">
-                <a href="#"  id="projet1"><div>1er DVD Autoproduit</div></a>
-                <a href="#" id="projet2"><div >Vichy</div></a>
-                <a href="#" id="projet3"><div >Bande Annonce "Ces chansons là"</div></a>
+            <h2>Mon dernier projet</h2>
+            <div class="homeProjet">
+                <div>Bande Annonce MVB Production "Ces Chansons là"</div>
             </div>
             <a href="galerie.html" class="cta"><span>Accéder à ma galerie</span></a>
         </section>
+        
         <div class="espaceFooter"></div>
         
         <footer>
@@ -155,6 +155,8 @@
         
         <script>
             var loader = document.getElementById("preloader");
+            var body = document.getElementsByTagName("body");
+
             window.addEventListener("load", function(){
                 loader.style.opacity = 0;
                 loader.style.position = "absolute";

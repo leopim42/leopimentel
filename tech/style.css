@@ -109,7 +109,7 @@ nav li{
 	display: flex;
 	align-item: center;
     position: relative;
-		flex-direction: row;
+    flex-direction: row;
 }
 .navBouton a{
 	position: relative;
@@ -403,7 +403,8 @@ h1{
 /*---------- Projets ----------*/
 
 .projets{
-    dispay: block;
+    display: block;
+    padding: 0 1em 2em 0;
 }
 .grilleProjets{
     display: grid;
@@ -412,7 +413,16 @@ h1{
     height: 18em;
 }
 
-.grilleProjets div{
+.homeProjet{
+    height: 25em;
+    position: relative;
+    background: black;
+    width: 65%;
+    display: block;
+    margin: auto;
+}
+
+.homeProjet div{
     position: absolute;
     bottom: 1em;
     left: 1em;
@@ -422,31 +432,15 @@ h1{
     transition-duration: 0.5s;
 }
 
-.grilleProjets > a:hover{
-    font-size: 1.2em;
-}
-
 .projets h2{
     font-size: 2.2em;
     text-align: center;
+    padding: 0.5em;
 }
 
 .projets .cta{
     display: block;
-    margin: 5em auto;
-}
-
-#projet1{
-    background-color: red;
-    position: relative;
-}
-#projet2{
-    background-color: yellow;
-    position: relative;
-}
-#projet3{
-    background-color: red;
-    position: relative;
+    margin: 1em auto;
 }
 
 
@@ -818,6 +812,17 @@ footer *{
     margin-top: 2em;
 }
 
+/*---------- Loader ----------*/
+#preloader {
+    background: #000000 url("loader.gif") no-repeat center center;
+    background-size: 8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    transition-duration: 1s;
+}
+
 /*---------- Responsive ----------*/
 
 @media all and (min-width: 48em) and (max-width: 60em){ /*Intermédiaire*/
@@ -853,13 +858,16 @@ footer *{
     .contactReseaux img{
         height: 3em;
     }
+    #preloader{
+        background-size: 10%;
+    }
 }
 
 @media all and (max-width: 48em){ /*Smartphone*/
     h1{
-        margin: auto 0.1em;
-        font-size: 2.5em;
-        width: 100%;
+        margin: auto 1em;
+        font-size: 2em;
+        width: 50%;
     }
     .headerHome a{
         position: absolute;
@@ -881,7 +889,8 @@ footer *{
     }
 
     .bio p{
-        width: 85%;
+        width: 80%;
+        font-size: 1em;
     }
 
     .bio .cta{
@@ -890,10 +899,15 @@ footer *{
     .chiffreCles{
         margin-top: 2em;
         width: 85%;
+        height: 100%;
+    }
+    .grilleChiffres{
+        grid-template-columns: 1fr;
     }
     .espaceChiffres{
         height: 60%;
     }
+    
     .grilleProjets{
     grid-template-columns: 1fr;
     grid-auto-columns: 30em;
@@ -912,18 +926,13 @@ footer *{
     .footerListe a{
         margin-left: 1em;
     }
+    #preloader{
+        background-size: 35%;
+    }
 }
 
 
-#preloader {
-    background: #000000 url("loader.gif") no-repeat center center;
-    background-size: 8%;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 999;
-    transition-duration: 1s;
-}
+
 
 
 /*----------  ----------*/
