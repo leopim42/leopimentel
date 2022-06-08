@@ -376,7 +376,6 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 10em;
-    
     margin: auto;
 }
 
@@ -399,6 +398,13 @@ h1{
 }
 
 
+@media all and (max-width: 48em){
+    
+}
+
+
+@media all and (min-width: 48em) and (max-width: 60em){
+}
 
 /*---------- Projets ----------*/
 
@@ -861,6 +867,12 @@ footer *{
     #preloader{
         background-size: 10%;
     }
+    .galerieProjets{
+        display: none;
+    }
+    .galerieTopProjet p{
+        font-size: 1.5em;
+    }
 }
 
 @media all and (max-width: 48em){ /*Smartphone*/
@@ -900,24 +912,45 @@ footer *{
         margin-top: 2em;
         width: 85%;
         height: 100%;
+        position: inherit;
+        margin: auto;
+        transform: translate(0);
     }
     .grilleChiffres{
         grid-template-columns: 1fr;
+        grid-auto-rows: 8em;
+    }
+    .projets{
+        display: none;
     }
     .espaceChiffres{
-        height: 60%;
-    }
-    
-    .grilleProjets{
-    grid-template-columns: 1fr;
-    grid-auto-columns: 30em;
+        height: 0%;
     }
     .espaceNavBas{
-        height: 4em;
+        height: 3em;
     }
     .contact{
         display: block;
-        height: 150%;
+        height: 205%;
+    }
+    .contactReseaux{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 10em;
+    }
+    .contactReseaux img{
+        height: 4em;
+    }
+    .galerieProjets{
+        display: none;
+    }
+    .galerieTopProjet{
+        display: none;
+    }
+    .galeriePG{
+        grid-template-columns: 1fr;
+    }
+    .servicesG{
+        grid-template-columns: 1fr;
     }
     .footerListe {
         grid-template-columns: 1fr;
