@@ -221,10 +221,22 @@ nav li{
     width: 100%;
     position: relative;
     display: flex;
-    background-image: url("img/bannierreHomepage.webp");
+    background: linear-gradient(transparent, black 100%), url("img/bannierreHomepage.webp");
     background-size: cover;
     background-position: center;
 
+}
+
+.lienHeaderHome{
+    color: white;
+    position: absolute;
+    bottom: 5em;
+    right: 1em;
+    
+}
+
+.lienHeaderHome:hover{
+    text-decoration: underline;
 }
 
 h1{
@@ -237,7 +249,7 @@ h1{
     transform: translate(0,-50%)
 }
 
-.headerHome a{
+.headerHome > .cta{
     position: absolute;
     bottom: 8em;
     left: 10em;
