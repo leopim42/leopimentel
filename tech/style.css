@@ -1012,19 +1012,20 @@ footer *{
         font-size: 2em;
         width: 50%;
     }
-    .headerHome a{
+    .headerHome .cta{
         position: absolute;
-        left: 1em;
+        left: 50%;
         width: 50%;
         font-size: 1.1em;
         bottom: 10em;
+        transform: translate(-50%);
     }
     .grilleServices{
     grid-template-columns: 1fr;
     height: 100%;
     }
     .bio{
-    padding: 4%;
+    padding: 5%;
     }
 
     .bio h2 {
@@ -1032,7 +1033,7 @@ footer *{
     }
 
     .bio p{
-        width: 80%;
+        width: 75%;
         font-size: 1em;
     }
 
@@ -1040,12 +1041,9 @@ footer *{
         margin: 3em auto
     }
     .chiffreCles{
-        margin-top: 2em;
-        width: 85%;
+        display: block;
+        width: 80%;
         height: 100%;
-        position: inherit;
-        margin: auto;
-        transform: translate(0);
     }
     .grilleChiffres{
         grid-template-columns: 1fr;
@@ -1055,7 +1053,7 @@ footer *{
         display: none;
     }
     .espaceChiffres{
-        height: 0%;
+        height: 100%;
     }
     .espaceNavBas{
         height: 3em;
@@ -1093,4 +1091,15 @@ footer *{
     #preloader{
         background-size: 35%;
     }
+    .lienHeaderHome{
+        display: none;
+    }
+    .footerLeft{
+        display: none;
+    }
+    .footerRight > ul{
+        width: 100%;
+        margin: auto;
+    }
+    
 }
