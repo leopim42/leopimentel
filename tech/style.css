@@ -37,7 +37,7 @@ nav{
 	position: fixed;
 	width: 100%;
     height: 4em;
-	z-index: 900;
+	z-index: 100;
 	
 	display: flex;
 	background-color: #333333;
@@ -224,15 +224,13 @@ nav li{
     background: linear-gradient(transparent, black 100%), url("img/bannierreHomepage.webp");
     background-size: cover;
     background-position: center;
-
 }
 
 .lienHeaderHome{
     color: white;
     position: absolute;
     bottom: 5em;
-    right: 1em;
-    
+    right: 1em; 
 }
 
 .lienHeaderHome:hover{
@@ -635,11 +633,12 @@ footer *{
     width: 60%;
 }
 
-.galerieTopProjet p{
+.galerieTopProjet h3{
     font-size: 1.5em;
-    color: white;
+    font-weight: 400;
+    color: #faffff;
     text-align: center;
-    margin: 0.5em auto 1em;;
+    margin: 0.5em auto 1em;
 }
 
 .galerieTopProjet .cta{
@@ -715,6 +714,34 @@ footer *{
     display: block;
     width: 15%;
     margin: 0 auto;
+}
+
+
+.gridProjet{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 6em 0;
+}
+
+.vignetteProjet{
+    width: 100%;
+}
+
+.vignetteProjet h3{
+    color: #faffff;
+    font-weight: 400;
+}
+
+.vignetteProjet a{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.vignetteProjet img{
+    width: 100%;
+    border-radius: 1em;
 }
 
 
