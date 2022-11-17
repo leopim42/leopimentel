@@ -350,10 +350,22 @@ h1{
     min-height: 35em;
 }
 
+.bio img{
+    width: 100%;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.gridBio{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 .bio h2 {
     font-size: 2.2em;
     text-align: center;
     color: #faffff;
+    margin: 0 0 1em;
 }
 
 .bio p{
