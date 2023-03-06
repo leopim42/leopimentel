@@ -10,21 +10,10 @@
         <link rel="preconnect" href="https://p.typekit.net">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
 		<link rel="stylesheet" href="tech/style.css">
-		<link rel="icon" href="tech/favicon.svg">
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ8Q0LZJ1B"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-BZ8Q0LZJ1B');
-        </script>
-        
+		<link rel="icon" href="tech/favicon.svg">        
 	</head>
 
-	<body>
+	<body id="servicesBody">
         
         <div id="preloader"></div>
         
@@ -50,120 +39,69 @@
         <div class="navEspaceH"></div> <!--Espace pour menu-->
         
         
-        <!-- Header -->
-        <header class="headerServices">
-            <h1>Services</h1>
-        </header>
+        <section id="services">
+            <a href="services/photo.html" class="servicesBloc">
+                <div>
+                    <h3>Photo</h3>
+                    <p>Découvrez mes services photos !</p>
+                    <div class="servicesFond"></div>
+                </div>
+            </a>
+            <a href="#" class="servicesBloc">
+                <div>
+                    <h3>Vidéo</h3>
+                    <p>Découvrez mes services vidéos !</p>
+                </div>
+            </a>
+            <a href="#" class="servicesBloc">
+                <div>
+                    <h3>Multimédia</h3>
+                    <p>Découvrez mes services multimédia & web !</p>
+                </div>
+            </a>
+        </section>
+
+
+
+
         
-        <section class="servicesCat" id="servicePhoto"> <!-- Section Photo-->
-            <h2>Photo</h2>
-            <div class="servicesG">
-                <div class="servicesArticle" id="service1">
-                    <a href="#">
-                    <h3>Shooting Photo personnalisé</h3>
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service2">
-                    <a href="#">
-                    <h3>Évènementiel / Reportage Photo</h3>
-                    
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service3">
-                    <a href="#">
-                    <h3>Immobilier / Architectural</h3>
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service4">
-                    <a href="#">
-                    <h3>Book Artistes</h3>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="servicesCat" id="serviceVideo"> <!--Section Vidéo-->
-            <h2>Vidéo</h2>
-            <div class="servicesG">
-                <div class="servicesArticle" id="service5">
-                    <a href="#">
-                    <h3>Corporate / PUB</h3>
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service6">
-                    <a href="#">
-                    <h3>Évènementiel / LIVE</h3>
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service7">
-                    <a href="#">
-                    <h3>Associations / Collectivités</h3>
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service8">
-                    <a href="#">
-                    <h3>Artisans / Artistes</h3>
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <section class="servicesCat" id="serviceMultimedia"> <!--Multimédia-->
-            <h2>Multimédia</h2>
-            <div class="servicesG">
-                <div class="servicesArticle" id="service9">
-                    <a href="#">
-                    <h3>Création de site web</h3>
-                    
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service10">
-                    <a href="#">
-                    <h3>Infographie</h3>
-                    
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service11">
-                    <a href="#">
-                    <h3>Graphisme</h3>
-                    
-                    </a>
-                </div>
-                <div class="servicesArticle" id="service12">
-                    <a href="#">
-                    <h3>Communication / Marketing</h3>
-                    
-                    </a>
-                </div>
-            </div>
-        </section>
         <div class="espaceFooter"></div>
         <footer>
+            <!--Vague Footer-->
             <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
                 <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#794e37" />
                 <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#333333"/>
             </svg>
             
-            <div class="footerContenu">
-                <ul class="footerLeft">
-                    <li><a href="#"><img src="tech/img/roanne.svg" alt="Plan Roanne"><h3>Roanne</h3></a></li>
-                    <li><a href="#"><img src="tech/img/vichy.svg" alt="Plan de Vichy"><h3>Vichy</h3></a></li>
+            <!--Contenu Footer-->
+            <div id="footerLink">
+                <ul class="footerList">
+                    <li class="footerTitre">Plan du site</li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="footerRight">
-                    <ul class="footerRS">
-                        <li><a href="https://facebook.com/LPleopimentel" target="_blank"><img src="tech/logo/facebookW.webp" alt="Logo Facebook"></a></li>
-                        <li><a href="https://www.instagram.com/leo.pim/?hl=fr" target="_blank"><img src="tech/logo/instagramW.webp" alt="Logo Facebook"></a></li>
-                        <li><a href="https://www.linkedin.com/in/leopimentel27/" target="_blank"><img src="tech/logo/linkedinW.webp" alt="Logo Facebook"></a></li>
-                    </ul>
-                    <ul class="footerMenu">
-                        <li><a href="index.html">Accueil</a></li>   
-                        <li><a href="galerie.html">Galerie</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li>-</li>
-                        <li><a href="mentionslegales.html">Mentions Légales</a></li>
-                        <li>&copy; Léo PIMENTEL - 2022</li>
-                    </ul>
-                </div>              
+                <ul class="footerList">
+                    <li class="footerTitre">Photo</li>
+                    <li><a href="#">Shooting Photo</a></li>
+                    <li><a href="#">Évènementiel</a></li>
+                    <li><a href="#">Corporate</a></li>
+                </ul>
+                <ul class="footerList">
+                    <li class="footerTitre">Vidéo</li>
+                    <li><a href="#">Réalisation</a></li>
+                    <li><a href="#">Montage</a></li>
+                </ul>
+                <ul class="footerList">
+                    <li class="footerTitre">Multimédia</li>
+                    <li><a href="#">Infographie</a></li>
+                    <li><a href="#">Création Site Web</a></li>
+                </ul>
+            </div>
+            <div id="footerDescr">
+                <p>2023 © LP - Léo PIMENTEL (EI)</p>
+                <p><a href="mentionslegales.html">Mentions Légales</a></p>
             </div>
         </footer>
         <div class="espaceNavBas"></div>
