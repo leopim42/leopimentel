@@ -124,9 +124,6 @@ nav li{
 	color: white;
 	font-size: 1.4em;
 }
-.navBouton a:hover{
-	color: #794E37;
-}
 
 .navIcon{
 	height: 0.8em;
@@ -233,9 +230,7 @@ nav li{
     right: 1em; 
 }
 
-.lienHeaderHome:hover{
-    text-decoration: underline;
-}
+
 
 h1{
     margin: auto 3em;
@@ -283,15 +278,6 @@ h1{
 	transition: 0.5s;
 }
 
-.cta:hover span{
-	padding-right: 25px;
-}
-
-.cta:hover span:after{
-	opacity: 1;
-	right: 0;
-}
-
 
 /*---------- Grille Services ----------*/
 #HomeServices{
@@ -319,9 +305,7 @@ h1{
     transition-duration: 0.5s;
 }
 
-#HomeServices a:hover{
-    font-size: 1.8em;
-}
+
 #HomeServices a:nth-child(1){
     background-image: linear-gradient(transparent, #18130e), url("img/s1photo.webp");
 }
@@ -379,8 +363,10 @@ h1{
 /*---------- Projets ----------*/
 
 .projets{
-    display: block;
-    padding: 0 1em 2em 0;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: auto;
 }
 .grilleProjets{
     display: grid;
@@ -395,7 +381,6 @@ h1{
     background-image: linear-gradient(transparent, #18130e), url("../projets/img/mvb4.webp");
     background-size: cover;
     background-position: center;
-    width: 65%;
     display: block;
     margin: auto;
 }
@@ -464,14 +449,7 @@ h1{
     margin: auto;
     transition-duration: 0.5s;
 }
-.contactReseaux li:hover{
-    transform: scale(110%);
-    transition-duration: 0.5s;
-}
 
-.contactContenu a:hover{
-    text-decoration: underline;
-}
 
 .contactReseaux{
     display: flex;
@@ -503,10 +481,6 @@ footer svg{
     color: white;
 }
 
-#footerLink a:hover{
-    text-decoration: underline;
-}
-
 .footerList{
     display: flex;
     flex-direction: column;
@@ -533,15 +507,6 @@ footer svg{
     color: white;
 margin: 1em;
 }
-
-#footerDescr a:hover{
-    text-decoration: underline;
-}
-
-
-
-
-
 
 /*---------- Galerie ----------*/
 
@@ -572,11 +537,11 @@ margin: 1em;
 
 .topProjetImg{
     margin: 2em auto;
+    width: 60%;
     height: 25em;
     background-image: url("../projets/img/mvb2.webp");
     background-size: cover;
     background-position: center;
-    width: 60%;
 }
 
 .galerieTopProjet h3{
@@ -755,18 +720,7 @@ margin: 1em;
     transition-duration:0.5s;
 }
 
-.servicesBloc:hover{
-    height: 85%;
-}
 
-.servicesBloc:hover div{
-    background-color: white;
-    transition-duration: 0.5s;
-}
-
-.servicesBloc:hover h3, .servicesBloc:hover p{
-    color: black;
-}
 
 /* Pages Services */
 
@@ -778,9 +732,15 @@ margin: 1em;
     justify-content: space-between;
 }
 
+#servicesPages h1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
 .servicesBlocPages{
-    height: 15em;
-    width: 80%;
+    height: 20em;
+    width: 90%;
     margin: 2em auto;
     transition-duration: 0.5s;
     border: solid 0.2em white;
@@ -813,23 +773,6 @@ margin: 1em;
     transition-duration: 0.5s;
     display: none;
     margin: auto;
-}
-
-.servicesBlocPages:hover{
-    width: 85%;
-}
-
-.servicesBlocPages:hover div{
-    background-color: white;
-    transition-duration: 0.5s;
-}
-
-.servicesBlocPages:hover h3, .servicesBlocPages:hover p{
-    color: black;
-}
-
-.servicesBlocPages:hover p{
-    display: block;
 }
 
 .photoPage:nth-child(2){
@@ -1016,6 +959,69 @@ margin: 1em;
 }
 
 
+/*  ---------- HOVER ---------- */
+@media all and (min-width: 48em){
+    .navBouton a:hover{
+        color: #794E37;
+    }
+    .lienHeaderHome:hover{
+        text-decoration: underline;
+    }
+    .cta:hover span{
+        padding-right: 25px;
+    }
+    
+    .cta:hover span:after{
+        opacity: 1;
+        right: 0;
+    }
+    #HomeServices a:hover{
+        font-size: 1.8em;
+    }
+    .contactReseaux li:hover{
+        transform: scale(110%);
+        transition-duration: 0.5s;
+    }
+    .contactContenu a:hover{
+        text-decoration: underline;
+    }
+    #footerLink a:hover{
+        text-decoration: underline;
+    }
+    #footerDescr a:hover{
+        text-decoration: underline;
+    }
+    .servicesBloc:hover{
+        height: 85%;
+    }
+    
+    .servicesBloc:hover div{
+        background-color: white;
+        transition-duration: 0.5s;
+    }
+    
+    .servicesBloc:hover h3, .servicesBloc:hover p{
+        color: black;
+    }
+    .servicesBlocPages:hover{
+        width: 95%;
+    }
+    
+    .servicesBlocPages:hover div{
+        background-color: white;
+        transition-duration: 0.5s;
+    }
+    
+    .servicesBlocPages:hover h3, .servicesBlocPages:hover p{
+        color: black;
+    }
+    
+    .servicesBlocPages:hover p{
+        display: block;
+    }
+}
+
+
 /*---------- Responsive ----------*/
 
 @media all and (min-width: 48em) and (max-width: 60em){ /*Intermédiaire*/
@@ -1174,4 +1180,13 @@ margin: 1em;
     #services{
     padding: 0.5em;
     }   
+    #servicesPages{
+        padding: 0;
+        padding-top: 6em;
+        width: 100%;
+    }
+    .servicesBlocPages{
+        width: 100%;
+        margin: 1em auto;
+    }
 }
