@@ -1116,7 +1116,7 @@ margin: 1em;
         flex-direction: column;
     }
     .projets{
-        display: none;
+        width: 95%;
     }
     .espaceNavBas{
         height: 3em;
