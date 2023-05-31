@@ -252,6 +252,10 @@ strong{
 	height: 4em;
 }
 
+#Homeservices div{
+	padding: 2em 1em;
+}
+
 #Homeservices p{
 	margin: 1em auto;
 }
@@ -471,6 +475,12 @@ margin: 1em;
 	}
 	#homeChiffres div{
 		margin: 1.5em auto;
+	}
+	.chiffre{
+		font-size: 3em;
+	}
+	.chiffreDescr{
+		font-size: 1.2em;
 	}
 	#confiance{
 		flex-direction: column;
