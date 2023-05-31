@@ -1,33 +1,19 @@
 <!doctype html>
-<html lang="FR">
-	<head>
+<html>
+    <head>
 		<meta charset="utf-8">
-		<title>Galerie | LP</title>
-		<meta name="Description" content="Description de la page">
-		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy">
+		<title>Galerie Portfolio | LP</title>
+		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy, galerie, portfolio">
 		<meta name="author" content="Léo PIMENTEL">
 		<meta name="copyright" content="LP">
         <link rel="preconnect" href="https://p.typekit.net">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
 		<link rel="stylesheet" href="tech/style.css">
-		<link rel="icon" href="tech/favicon.svg">
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ8Q0LZJ1B"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-BZ8Q0LZJ1B');
-        </script>
+		<link rel="icon" href="tech/favicon.svg">        
 	</head>
 
-	<body>
-        
-        <div id="preloader"></div>
-        
-        <!-- Menu de navigation -->
+    <body>
+        <!--    MENU NAVIGATION  -->
         <nav>
             <div class="navMask">
                 <div class="navContenu">
@@ -37,78 +23,51 @@
                     <div class="navListe">
                         <ul>
                             <li><div class="navBouton"><a href="index.html"><img src="tech/logo/home.webp" alt="" class="navIcon">Accueil</a></div></li>
-                            <li><div class="navBouton" style="border-bottom: solid #8E5D43;"><a href="galerie.html" style="color: #8e5d43;"><img src="tech/logo/realC.webp" alt="" class="navIcon">Galerie</a></div></li>
+                            <li><div class="navBouton" style="border-bottom: solid #794e37;"><a href="galerie.html" style="color: #794e37;"><img src="tech/logo/realC.webp" alt="" class="navIcon">Galerie</a></div></li>
                             <li><div class="navBouton"><a href="services.html"><img src="tech/logo/services.webp" alt="" class="navIcon">Services</a></div></li>
                             <li><div class="navBouton"><a href="contact.html"><img src="tech/logo/contact.webp" alt="" class="navIcon">Contact</a></div></li>
                         </ul>
                     </div>
-                    
                 </div>
             </div>
         </nav>
-        
         <div class="navEspaceH"></div> <!--Espace pour menu-->
-        
-        
-        <!-- Header -->
-        <header class="headerGalerie">
-            <h1>Galerie</h1>
+
+        <!--    HERO HEADER     -->
+        <header class="midscreen flex" id="galerieHeader">
+            <div class="flex flexV">
+                <h1 id="h1Home">Léo PIMENTEL<br><span>Galerie Portfolio</span></h1>
+                <div class="flex flexH" id="lienHeader">
+                        <a href="contact.html" class="cta light border"><span>Contact</span></a>
+                </div>
+            </div>
         </header>
 
-        <section class="galerieTopProjet">
-            <h2>Mes projets</h2>
-            <div>
-                <a href="projets/ceschansonsla.html"><div class="topProjetImg"></div></a>
-                <h3>Bande Annonce MVB Production "Ces chansons là"</h3>
-                <a href="projets/ceschansonsla.html" class="cta"><span>Visionner</span></a>
+        <!--    GALERIE PHOTOS  -->
+        <section class="flex flexH" id="galerie">
+            <div class="flexV">
+                <img src="tech/galerie/a.webp" alt="Glace Eternelle">
+                <img src="tech/galerie/m.webp" alt="Trace de vie">
+                <img src="tech/galerie/pousse.webp" alt="Pousse de vie">
+                <img src="tech/galerie/mvbV.webp" alt="MVB Production">
             </div>
-            
-            <div class="gridProjet"> 
-                <div class="vignetteProjet">
-                    <a href="projets/bulletincoutouvre.html"><img src="projets/img/bulletinCoutouvre.png" alt="Vignette Bulletin Municipal"></a>
-                    <h3>Bulletin Municipal de Coutouvre</h3>
-                </div>
-                <div class="vignetteProjet">
-                    <a href="projets/magicdanse2022.html"><img src="projets/img/mvb2.webp" alt="Vignette Bulletin Municipal"></a>
-                    <h3>Gala "Nomades, et vis danse !"</h3>
-                </div>
-                <div class="vignetteProjet">
-                    <a href="projets/shootingfamille.html"><img src="projets/img/mvb2.webp" alt="Vignette Bulletin Municipal"></a>
-                    <h3>Shooting famille</h3>
-                </div>
+            <div class="flexV" id="midCol">
+                <img src="tech/galerie/b.webp" alt="Leadenhall">
+                <img src="tech/galerie/k.webp" alt="Olympus">
+                <img src="tech/galerie/cote.webp" alt="Cote">
+                <img src="tech/galerie/bordLoire.webp" alt="Bord de Loire">
+                
+            </div>
+            <div class="flexV">
+                <img src="tech/galerie/c.webp" alt="Montains">
+                <img src="tech/galerie/n.webp" alt="Fleur de courgette">
+                <img src="tech/galerie/mvbM.webp" alt="MVB Production">
+                <img src="tech/galerie/ruePietonne.webp" alt="Rue pietonne">
             </div>
         </section>
-       
-        
-        <section class="galeriePhoto">
-            <h2>Galerie Photo</h2>
-            <div class="galeriePG">
-                <img src="tech/img/galerie/a.webp" alt="">
-                <img src="tech/img/galerie/b.webp" alt="">
-                <img src="tech/img/galerie/c.webp" alt="">
-                <img src="tech/img/galerie/d.webp" alt="">
-                <img src="tech/img/galerie/e.webp" alt="">
-                <img src="tech/img/galerie/f.webp" alt="">
-                <img src="tech/img/galerie/g.webp" alt="">
-                <img src="tech/img/galerie/h.webp" alt="">
-                <img src="tech/img/galerie/i.webp" alt="">
-                <img src="tech/img/galerie/j.webp" alt="">
-                <img src="tech/img/galerie/k.webp" alt="">
-                <img src="tech/img/galerie/l.webp" alt="">
-                <img src="tech/img/galerie/m.webp" alt="">
-                <img src="tech/img/galerie/n.webp" alt="">
-                <img src="tech/img/galerie/o.webp" alt="">
-            </div>  
-        </section>
-        
-        <section class="galerieContact">
-            <div class="galerieContactF">
-                <h2>Vous aussi, lancez votre projet</h2>
-            </div>
-            <a href="contact.html" class="cta"><span>Contact</span></a>
-        </section>
-        
+
         <div class="espaceFooter"></div>
+        
         <footer>
             <!--Vague Footer-->
             <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
@@ -119,27 +78,24 @@
             <!--Contenu Footer-->
             <div id="footerLink">
                 <ul class="footerList">
-                    <li class="footerTitre">Plan du site</li>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul class="footerList">
                     <li class="footerTitre">Photo</li>
                     <li><a href="#">Shooting Photo</a></li>
                     <li><a href="#">Évènementiel</a></li>
                     <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Mariage</a></li>
                 </ul>
                 <ul class="footerList">
                     <li class="footerTitre">Vidéo</li>
                     <li><a href="#">Réalisation</a></li>
+                    <li><a href="#">Évènementiel</a></li>
                     <li><a href="#">Montage</a></li>
+                    <li><a href="#">Mariage</a></li>
                 </ul>
                 <ul class="footerList">
                     <li class="footerTitre">Multimédia</li>
                     <li><a href="#">Infographie</a></li>
                     <li><a href="#">Création Site Web</a></li>
+                    <li><a href="#">Community Management</a></li>
                 </ul>
             </div>
             <div id="footerDescr">
@@ -148,17 +104,5 @@
             </div>
         </footer>
         <div class="espaceNavBas"></div>
-        
-        <script>
-            var loader = document.getElementById("preloader");
-            window.addEventListener("load", function(){
-                loader.style.opacity = 0;
-                loader.style.position = "absolute";
-                
-                setTimeout(function() {
-                    loader.style.display = "none";
-                }, 1000)
-            })                             
-        </script>
-	</body>
+    </body>
 </html>

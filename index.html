@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="FR">
-	<head>
+<html>
+    <head>
 		<meta charset="utf-8">
 		<title>Léo PIMENTEL - Photo, Vidéo, Multimédia | LP</title>
 		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy">
@@ -11,11 +11,9 @@
 		<link rel="stylesheet" href="tech/style.css">
 		<link rel="icon" href="tech/favicon.svg">        
 	</head>
-    
-    <div id="preloader"></div>
-    
-	<body>
-        <!-- Menu de navigation -->
+
+    <body>
+        <!--    MENU NAVIGATION  -->
         <nav>
             <div class="navMask">
                 <div class="navContenu">
@@ -33,54 +31,88 @@
                 </div>
             </div>
         </nav>
-        
         <div class="navEspaceH"></div> <!--Espace pour menu-->
-        
-        <!-- Header -->
-        <header class="headerHome">
-            <h1>Votre histoire <br> commence ici</h1>
-            <a href="contact.html" class="cta"><span>Démarrez la votre</span></a>
-            <a href="#" class="lienHeaderHome">Découvrez la vidéo intégrale</a>
+
+        <!--    HERO HEADER     -->
+        <header class="fullscreen flex" id="headerHome">
+            <div class="flex flexV">
+                <h1 id="h1Home">Léo PIMENTEL<br><span>Photographe, Vidéaste, Infographiste<br>Roanne & Vichy</span></h1>
+                <div class="flex flexH" id="lienHeader">
+                        <a href="contact.html" class="cta light border"><span>Contact</span></a>
+                    <a href="#" class="light link margin">Découvrez la vidéo intégrale &#10132;</a>
+                </div>
+            </div>
         </header>
 
-        <!-- Grille de mes services -->
-        <section id="HomeServices">
-            <a href="services/photo.html">
-                <div>Photographie</div>
-            </a>
-            <a href="services/video.html">
-                <div>Vidéo</div>
-            </a>
-            <a href="services/multimedia.html">
-                <div>Multimédia</div>
-            </a>
+        <!--    SERVICES    -->
+        <section class="midscreen backN flex flexH" id="Homeservices">
+            <div class="card glass border flex flexV">
+                <h2>Photo</h2>
+                <p>Capturez les moments importants de votre vie ou de votre activité ! Un <strong>mariage</strong>, un anniversaire, une <strong>séance portrait</strong> ou un <strong>évènement professionnel</strong>, faites appel à un photographe de qualité qui mettra en oeuvre son savoir-faire pour réaliser des <strong>prises de vues</strong> selon vos besoins, pour un souvenir inoubliable.</p>
+                <a href="services.html" class="cta light border margin"><span>En savoir plus</span></a>
+            </div>
+            <div class="card glass border flex flexV">
+                <h2>Vidéo</h2>
+                <p>Besoin d'un <strong>vidéaste</strong> pour réaliser vos projets ? <strong>Pub, film d'entreprise, reportage ou drone</strong>, tout sera mis en oeuvre pour répondre à vos attentes et besoins. Avec des compétences en <strong>images, en son et en montage</strong>, faites appel à un professionnel polyvalent et à votre service.</p>
+                <a href="services.html" class="cta light border margin"><span>En savoir plus</span></a>
+            </div>
+            <div class="card glass border flex flexV">
+                <h2>Multimédia</h2>
+                <p>Vous cherchez à booster votre visibilité sur internet ? Faites appel à mes services multimédia. Infographiste, Webmaster ou Community manager, laissez moi vous proposer des solutions sur mesure pour assurer vos objectifs de communication : réseaux sociaux, site web, optimisation du référencement ou campagne de communication visuelle...</p>
+                <a href="services.html" class="cta light border margin"><span>En savoir plus</span></a>
+            </div>
         </section>
 
 
-        <!-- Qui suis-je ? -->
-        <section class="bio">
-            <h2>Qui suis-je ?</h2>
-            <div class="gridBio">
-                <img src="tech/img/portrait-.webp" alt="Photo de profil">
+        <!--    A PROPOS    -->
+
+        <section class="backN flexV" id="aPropos">
+            <h2 class="light margin upper">Qui suis-je ?</h2>
+            <div class="flex flexH" id="propos">
+                <img class="border" src="tech/img/portrait-.webp" alt="Portrait de Léo PIMENTEL">
                 <div>
                     <p>&emsp;&emsp;Je m’appelle <strong>Léo PIMENTEL</strong> et je suis un jeune entrepreneur. Ce que je fais ? Je suis dans la création de contenu. Je suis <strong>photographe, vidéaste</strong> mais je fait également de la <span>mise en page, de l'infographie et du développement de site web</span>.</p>
                     <p>&emsp;&emsp;Passionné d'audiovisuel depuis mon plus jeune âge, c'est à mes 14 ans que je commence réellement à découvrir le monde du cinéma. Depuis, je me suis auto-formé et j'ai la chance d'avoir pu réaliser de nombreux projets : <span>captations de spectacles, reportages photo, pub...</span></p>
-                    <p>&emsp;&emsp;Je suis quelqu’un aux multiples compétences qui saura répondre à vos attentes. Vous voulez créer un site web ou développer votre présence digitale ? Vous cherchez un <strong>vidéaste</strong> pour votre entreprise ? Ou alors vous cherchez un <strong>photographe</strong> pour prendre des clichés d’un évènement qui vous tient à cœur ou organiser un shooting photo ? Alors contactez moi, <span>je suis prêt à travailler avec vous !</span></p>
-                </div>
+                    <p>&emsp;&emsp;Je suis quelqu’un aux multiples compétences qui saura répondre à vos attentes. Vous voulez créer un site web ou développer votre présence digitale ? Vous cherchez un <strong>vidéaste</strong> pour votre entreprise ? Ou alors vous cherchez un <strong>photographe</strong> pour prendre des clichés d’un évènement qui vous tient à cœur ou organiser un shooting photo ?</p>
+                    <p>Alors contactez moi, <span>je suis prêt à travailler avec vous !</span></p>
             </div>
-            <a href="contact.html" class="cta"><span>Contactez-moi</span></a>
         </section>
 
-        <!-- Projets-->
-        <section class="projets">
-            <h2>Mon dernier projet</h2>
-            <a href="projets/ceschansonsla.html">
-            <div class="homeProjet">
-                <div>Bande Annonce MVB Production "Ces Chansons là"</div>
-            </div></a>
-            <a href="galerie.html" class="cta"><span>Accéder à ma galerie</span></a>
+        <!--    CHIFFRES    -->
+        <section class="flex backN">
+            <div class="flexH" id="homeChiffres">
+                <div class="flexV">
+                    <p class="chiffre">5</p>
+                    <p class="chiffreDescr">années<br>d'expériences</p>
+                </div>
+                <div class="separateur"></div>
+                <div class="flexV">
+                    <p class="chiffre">6+</p>
+                    <p class="chiffreDescr">captations <br>de spectacles</p>
+                </div>
+                <div class="separateur"></div>
+                <div class="flexV">
+                    <p class="chiffre">20+</p>
+                    <p class="chiffreDescr">projets <br>menés</p>
+                </div>
+                <div class="separateur"></div>
+                <div class="flexV">
+                    <p class="chiffre">152.839</p>
+                    <p class="chiffreDescr">photos</p>
+                </div>
+            </div>
         </section>
-        
+
+
+        <!--    CONFIANCE   -->
+        <section class="flex flexV backN">
+            <h2 class="margin upper">Ils m'ont fait confiance</h2>
+            <div class="flexH glass border" id="confiance">
+                <img src="tech/logo/mvb.png" alt="MVB Production">
+                <img src="tech/logo/mairieCoutouvre.png" alt="Mairie de Coutouvre">
+            </div>
+        </section>
+
         <div class="espaceFooter"></div>
         
         <footer>
@@ -93,27 +125,24 @@
             <!--Contenu Footer-->
             <div id="footerLink">
                 <ul class="footerList">
-                    <li class="footerTitre">Plan du site</li>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul class="footerList">
                     <li class="footerTitre">Photo</li>
                     <li><a href="#">Shooting Photo</a></li>
                     <li><a href="#">Évènementiel</a></li>
                     <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Mariage</a></li>
                 </ul>
                 <ul class="footerList">
                     <li class="footerTitre">Vidéo</li>
                     <li><a href="#">Réalisation</a></li>
+                    <li><a href="#">Évènementiel</a></li>
                     <li><a href="#">Montage</a></li>
+                    <li><a href="#">Mariage</a></li>
                 </ul>
                 <ul class="footerList">
                     <li class="footerTitre">Multimédia</li>
                     <li><a href="#">Infographie</a></li>
                     <li><a href="#">Création Site Web</a></li>
+                    <li><a href="#">Community Management</a></li>
                 </ul>
             </div>
             <div id="footerDescr">
@@ -122,20 +151,5 @@
             </div>
         </footer>
         <div class="espaceNavBas"></div>
-        
-        <script>
-            var loader = document.getElementById("preloader");
-            var body = document.getElementsByTagName("body");
-
-            window.addEventListener("load", function(){
-                loader.style.opacity = 0;
-                loader.style.position = "absolute";
-                
-                setTimeout(function() {
-                    loader.style.display = "none";
-                }, 1000)
-            })                             
-        </script>
-        
-	</body>
+    </body>
 </html>

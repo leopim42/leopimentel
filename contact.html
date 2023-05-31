@@ -1,34 +1,19 @@
 <!doctype html>
-<html lang="FR">
-	<head>
+<html>
+    <head>
 		<meta charset="utf-8">
-		<title>Contact | LP</title>
-		<meta name="Description" content="Description de la page">
-		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy">
+		<title>Galerie Portfolio | LP</title>
+		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy, galerie, portfolio">
 		<meta name="author" content="Léo PIMENTEL">
 		<meta name="copyright" content="LP">
         <link rel="preconnect" href="https://p.typekit.net">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
 		<link rel="stylesheet" href="tech/style.css">
-		<link rel="icon" href="tech/favicon.svg">
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ8Q0LZJ1B"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-BZ8Q0LZJ1B');
-        </script>
-        
+		<link rel="icon" href="tech/favicon.svg">        
 	</head>
 
-	<body>
-        
-        <div id="preloader"></div>
-        
-        <!-- Menu de navigation -->
+    <body>
+        <!--    MENU NAVIGATION  -->
         <nav>
             <div class="navMask">
                 <div class="navContenu">
@@ -37,43 +22,43 @@
                     </div>
                     <div class="navListe">
                         <ul>
-                            <li><div class="navBouton"><a href="index.html" ><img src="tech/logo/home.webp" alt="" class="navIcon">Accueil</a></div></li>
+                            <li><div class="navBouton"><a href="index.html"><img src="tech/logo/home.webp" alt="" class="navIcon">Accueil</a></div></li>
                             <li><div class="navBouton"><a href="galerie.html"><img src="tech/logo/real.webp" alt="" class="navIcon">Galerie</a></div></li>
                             <li><div class="navBouton"><a href="services.html"><img src="tech/logo/services.webp" alt="" class="navIcon">Services</a></div></li>
-                            <li><div class="navBouton" style="border-bottom: solid #8E5D43;"><a href="contact.html" style="color: #8e5d43;"><img src="tech/logo/contactC.webp" alt="" class="navIcon" >Contact</a></div></li>
+                            <li><div class="navBouton" style="border-bottom: solid #794e37;"><a href="contact.html" style="color: #794e37;"><img src="tech/logo/contactC.webp" alt="" class="navIcon">Contact</a></div></li>
                         </ul>
                     </div>
-                    
                 </div>
             </div>
         </nav>
-        
         <div class="navEspaceH"></div> <!--Espace pour menu-->
-        
-        
-        <section class="contact">
-            <div class="banContact">
+
+        <section class="flex flexH" id="contact">
+            <div class="flex" id="contactBan">
                 <h1>Contact</h1>
             </div>
-            <div class="contactContenu">
-                <div>
-                    <h2>Mes réseaux sociaux</h2>
-                    <ul class="contactReseaux">
-                        <li><a href="https://facebook.com/LPleopimentel" target="_blank"><img src="tech/logo/facebookC.webp" alt="Lien vers Facebook"></a><br>LP - Léo PIMENTEL</li>
-                        <li><a href="https://www.instagram.com/lp_pimentel/?hl=fr" target="_blank"><img src="tech/logo/instagramC.webp" alt="Lien vers Instagram"></a><br>leo.pim</li>
-                        <li><a href="https://www.linkedin.com/in/leopimentel27/" target="_blank"><img src="tech/logo/linkedinC.webp" alt="Lien vers Facebook"></a><br>Léo PIMENTEL</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Email</h2>
+            <div class="flex" id="contactLink">
+                <div class="flexV border glass" id="contactCard">
+                    <a href="https://www.instagram.com/lp_leopimentel/" target="_blank">
+                        <img src="tech/logo/instagramC.webp" alt="Instagram">
+                        <p>lp_leopimentel</p>
+                    </a>
+                    <a href="https://www.facebook.com/LPleopimentel" target="_blank">
+                        <img src="tech/logo/facebookC.webp" alt="Facebook">
+                        <p>LP - Léo PIMENTEL</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leopimentel27/" target="_blank">
+                        <img src="tech/logo/linkedinC.webp" alt="LinkedIn">
+                        <p>Léo Pimentel</p>
+                    </a>
+                    <a href="#"></a>
                     <a href="mailto:leo.pim@hotmail.fr">leo.pim@hotmail.fr</a>
-                </div>
-                <div>
-                    <h2>Téléphone</h2>
                     <a href="#">07 82 98 63 88</a>
                 </div>
             </div>
         </section>
+
+        <div class="espaceFooter"></div> <!--Espace pour menu-->
         
         <footer>
             <!--Vague Footer-->
@@ -85,27 +70,24 @@
             <!--Contenu Footer-->
             <div id="footerLink">
                 <ul class="footerList">
-                    <li class="footerTitre">Plan du site</li>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul class="footerList">
                     <li class="footerTitre">Photo</li>
                     <li><a href="#">Shooting Photo</a></li>
                     <li><a href="#">Évènementiel</a></li>
                     <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Mariage</a></li>
                 </ul>
                 <ul class="footerList">
                     <li class="footerTitre">Vidéo</li>
                     <li><a href="#">Réalisation</a></li>
+                    <li><a href="#">Évènementiel</a></li>
                     <li><a href="#">Montage</a></li>
+                    <li><a href="#">Mariage</a></li>
                 </ul>
                 <ul class="footerList">
                     <li class="footerTitre">Multimédia</li>
                     <li><a href="#">Infographie</a></li>
                     <li><a href="#">Création Site Web</a></li>
+                    <li><a href="#">Community Management</a></li>
                 </ul>
             </div>
             <div id="footerDescr">
@@ -114,17 +96,5 @@
             </div>
         </footer>
         <div class="espaceNavBas"></div>
-        
-        <script>
-            var loader = document.getElementById("preloader");
-            window.addEventListener("load", function(){
-                loader.style.opacity = 0;
-                loader.style.position = "absolute";
-                
-                setTimeout(function() {
-                    loader.style.display = "none";
-                }, 0)
-            })                             
-        </script>
-	</body>
+    </body>
 </html>
