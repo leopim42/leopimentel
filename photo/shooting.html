@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Shooting Photo | Léo PIMENTEL</title>
+		<meta name="Keywords" content="Léo PIMENTEL, photographe, shooting, couple, portrait">
+		<meta name="author" content="Léo PIMENTEL">
+		<meta name="copyright" content="LP">
+        <link rel="preconnect" href="https://fonts.gstatic.com/">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
+		<link rel="stylesheet" href="../tech/styles.css">
+        <link rel="icon" href="../tech/favicon.svg"> 
+    </head>
+    <body>
+
+        <!--    MENU NAV    -->
+        <nav>
+            <ul id="barreSup">
+                <li>
+                    <a href="#" class="ongletNav"><img src="../tech/logo/logoBlanc.webp" alt="Logo de l'entreprise"></a>  
+                </li>
+            </ul>
+            <ul id="barreInf">
+                <li>
+                    <a href="../index.html" class="ongletNav underline">Accueil</a>  
+                </li>
+                <li>
+                    <a href="#" class="ongletNav underline">Services</a>  
+                </li>
+                <li>
+                    <div id="espaceCentral"></div>
+                </li>
+                <li>
+                    <a href="#" class="ongletNav underline">Galerie</a>  
+                </li>
+                <li>
+                    <a href="../contact.html" class="ongletNav underline">Contact</a>  
+                </li>
+            </ul>
+        </nav>  
+    <main>
+        
+
+        <!--    DIAG HEADER     -->
+        <section id="diagHeader">
+            <img src="../tech/img/ANNONCE MARC LAVOINE 2023_03_06 @LeoPimentel @JadeAngelard-2.jpg" alt="Bannière photo">
+        </section>
+
+        <section id="landingAccr">
+            <h1>Faites des photos pour <span id="accrTitle" class="gradient">vous amuser</span></h1>
+            <p>Que ce soit pour votre carrière, partager un moment avec ses amis ou sa famille ou vous souvenir d'un évènement important, faites appel à un photographe professionnel qui saura faire les clichés dont vous avez besoin..</p>
+        </section>
+
+        <script>
+            const text = document.querySelector("#accrTitle");
+            const textLoad = () => {
+                setTimeout(() => {
+                    text.textContent = "Vous amuser";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "Vos souvenirs";
+                }, 4000);
+                setTimeout(() => {
+                    text.textContent = "Votre famille";
+                }, 8000);
+                setTimeout(() => {
+                    text.textContent = "Votre carrière";
+                }, 12000);
+            }
+            textLoad();
+            setInterval(textLoad, 16000);
+        </script>
+
+
+
+
+
+        <!--    SERVICES    -->
+        <ul class="fullLibrary">
+            <li>
+                <h3 class="gradient">Photographie</h3>
+                <p>From creatures to characters, hardware, environments, vehicles, and more, our legendary in-house art department, ILM Art, makes a storyteller’s vision tangible.</p>
+            </li>
+            <li>
+                <h3 class="gradient">Vidéo</h3>
+                <p>From creatures to characters, hardware, environments, vehicles, and more, our legendary in-house art department, ILM Art, makes a storyteller’s vision tangible.</p>
+            </li>
+            <li>
+                <h3 class="gradient">Infographie</h3>
+                <p>From creatures to characters, hardware, environments, vehicles, and more, our legendary in-house art department, ILM Art, makes a storyteller’s vision tangible.</p>
+            </li>
+            <li>
+                <h3 class="gradient">Digital</h3>
+                <p>From creatures to characters, hardware, environments, vehicles, and more, our legendary in-house art department, ILM Art, makes a storyteller’s vision tangible.</p>
+            </li>
+        </ul>
+
+
+        <!--    HIGHLIGHT     -->
+        <section>
+            <div class="highlight">
+                <div></div>
+                <div>
+                    <h2>Qu'attendez-vous ?</h2>
+                    <a href="#" class="cta"><span>Contact</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!--    PORTRAIT    -->
+        <section id="portrait">
+            <div class="card">
+                <div>
+                    <img src="tech/img/portrait.webp" alt="Portrait de Léo PIMENTEL">
+                    <h2>Qui suis-je ?</h2>
+                </div>
+                <div>
+                    <p>&emsp;&emsp;Je m’appelle <strong>Léo PIMENTEL</strong> et je suis un jeune entrepreneur. Ce que je fais ? Je suis dans la création de contenu. Je suis <strong>photographe, vidéaste</strong> mais je fait également de la <span>mise en page, de l'infographie et du développement de site web</span>.</p>
+                    <p>&emsp;&emsp;Passionné d'audiovisuel depuis mon plus jeune âge, c'est à mes 14 ans que je commence réellement à découvrir le monde du cinéma. Depuis, je me suis auto-formé et j'ai la chance d'avoir pu réaliser de nombreux projets : <span>captations de spectacles, reportages photo, pub...</span></p>
+                    <p>&emsp;&emsp;Je suis quelqu’un aux multiples compétences qui saura répondre à vos attentes. Vous voulez créer un site web ou développer votre présence digitale ? Vous cherchez un <strong>vidéaste</strong> pour votre entreprise ? Ou alors vous cherchez un <strong>photographe</strong> pour prendre des clichés d’un évènement qui vous tient à cœur ou organiser un shooting photo ?</p>
+                    <p>Alors contactez moi, <span>je suis prêt à travailler avec vous !</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!--    CONFIANCE   -->
+        <section id="confiance">
+            <h2>Ils m'ont fait confiance</h2>
+            <div>
+                <a href="#"><img src="tech/logo/magicdanse.webp" alt="Logo de Magic Danse"></a>
+                <a href="roanne.fr" target="_blank"><img src="tech/logo/roanne.webp" alt="Logo de Roanne"></a>
+                <a href="coutouvre.fr" target="_blank"><img src="tech/logo/coutouvre.webp" alt="Logo de Coutouvre"></a>
+                <a href="#"><img src="tech/logo/mvb.webp" alt="Logo de MVB Production"></a>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footerContact">
+                <h3>N'hésitez-plus et contactez-moi dès maintenant !</h3>
+                <a href="#" class="cta"><span>Contact</span></a>
+            </div>
+            <div id="footerList">
+                <ul>
+                    <li class="footerTitle">Plan du site</li>
+                    <li>Accueil</li>
+                    <li>Services</li>
+                    <li>Galerie</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li class="footerTitle">Photo</li>
+                    <li>Shooting</li>
+                    <li>Évènementiel</li>
+                    <li>Corporate</li>
+                    <li>Mariage</li>
+                </ul>
+                <ul>
+                    <li class="footerTitle">Vidéo</li>
+                    <li>Réalisation</li>
+                    <li>Évènementiel</li>
+                    <li>Montage</li>
+                    <li>Mariage</li>
+                </ul>
+                <ul>
+                    <li class="footerTitle">Multimédia</li>
+                    <li>Création site web</li>
+                    <li>Community Management</li>
+                </ul>
+            </div>
+            <div id="footerLegal">
+                <p>2023 © LP - Léo PIMENTEL (EI)</p>
+                <a href="#" class="underline">Mentions Légales</a>
+            </div>
+        </footer>
+    </main>
+    
+    </body>
+</html>

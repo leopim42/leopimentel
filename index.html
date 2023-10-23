@@ -1,155 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-		<meta charset="utf-8">
+        <meta charset="utf-8">
 		<title>Léo PIMENTEL - Photo, Vidéo, Multimédia | LP</title>
 		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy">
 		<meta name="author" content="Léo PIMENTEL">
 		<meta name="copyright" content="LP">
-        <link rel="preconnect" href="https://p.typekit.net">
+        <link rel="preconnect" href="https://fonts.gstatic.com/">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
-		<link rel="stylesheet" href="tech/style.css">
-		<link rel="icon" href="tech/favicon.svg">        
-	</head>
-
+		<link rel="stylesheet" href="tech/styles.css">
+        <link rel="icon" href="tech/favicon.svg"> 
+    </head>
     <body>
-        <!--    MENU NAVIGATION  -->
+
+        <!--    MENU NAV    -->
         <nav>
-            <div class="navMask">
-                <div class="navContenu">
-                    <div class="navLogo">
-                        <a href="index.html"><img src="tech/logo/logo.webp" alt="Logo LP"></a>
-                    </div>
-                    <div class="navListe">
-                        <ul>
-                            <li><div class="navBouton" style="border-bottom: solid #794e37;"><a href="index.html" style="color: #794e37;"><img src="tech/logo/homeC.webp" alt="" class="navIcon">Accueil</a></div></li>
-                            <li><div class="navBouton"><a href="galerie.html"><img src="tech/logo/real.webp" alt="" class="navIcon">Galerie</a></div></li>
-                            <li><div class="navBouton"><a href="services.html"><img src="tech/logo/services.webp" alt="" class="navIcon">Services</a></div></li>
-                            <li><div class="navBouton"><a href="contact.html"><img src="tech/logo/contact.webp" alt="" class="navIcon">Contact</a></div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="navEspaceH"></div> <!--Espace pour menu-->
+            <ul id="barreSup">
+                <li>
+                    <a href="#" class="ongletNav"><img src="tech/logo/logoBlanc.webp" alt="Logo de l'entreprise"></a>  
+                </li>
+            </ul>
+            <ul id="barreInf">
+                <li>
+                    <a href="index.html" class="ongletNav underline">Accueil</a>  
+                </li>
+                <li>
+                    <a href="services.html" class="ongletNav underline">Services</a>  
+                </li>
+                <li>
+                    <div id="espaceCentral"></div>
+                </li>
+                <li>
+                    <a href="galerie.html" class="ongletNav underline">Galerie</a>  
+                </li>
+                <li>
+                    <a href="contact.html" class="ongletNav underline">Contact</a>  
+                </li>
+            </ul>
+        </nav>  
+    <main>
+        
 
         <!--    HERO HEADER     -->
-        <header class="fullscreen flex" id="headerHome">
-            <div class="flex flexV">
-                <h1 id="h1Home">Léo PIMENTEL<br><span>Photographe, Vidéaste, Infographiste<br>Roanne & Vichy</span></h1>
-                <div class="flex flexH" id="lienHeader">
-                        <a href="contact.html" class="cta light border"><span>Contact</span></a>
-                    <a href="#" class="light link margin">Découvrez la vidéo intégrale &#10132;</a>
+        <div id="heroHeader">
+            <div id="heroTitle">
+                <h2>Léo PIMENTEL</h2>
+                <h1>Photographe, Vidéaste, Infographiste <br>Roanne & Vichy</h1>
+                <div id="heroLink">
+                    <a href="contact.html" class="cta"><span>Contact</span></a>
+                    <a href="#" class="underline">Découvrez la vidéo intégrale <span>&#10132;</span></a>
                 </div>
             </div>
-        </header>
+            <div id="videoFilter"></div>
+            <iframe src="https://www.youtube.com/embed/PndSOIMJC3c?si=yt5uBNf4AqNelg1U&autoplay=1&loop=1&playlist=PndSOIMJC3c&mute=1&rel=0" title="YouTube video player" allow="autoplay;"></iframe>
+        </div>
+
 
         <!--    SERVICES    -->
-        <section class="backN flex flexH" id="Homeservices">
-            <div class="card glass border flex flexV">
-                <h2>Photo</h2>
-                <p>Capturez les moments importants de votre vie ou de votre activité ! Un <strong>mariage</strong>, un anniversaire, une <strong>séance portrait</strong> ou un <strong>évènement professionnel</strong>, faites appel à un photographe de qualité qui mettra en oeuvre son savoir-faire pour réaliser des <strong>prises de vues</strong> selon vos besoins, pour un souvenir inoubliable.</p>
-                <a href="services.html" class="cta light border margin"><span>En savoir plus</span></a>
-            </div>
-            <div class="card glass border flex flexV">
-                <h2>Vidéo</h2>
-                <p>Besoin d'un <strong>vidéaste</strong> pour réaliser vos projets ? <strong>Pub, film d'entreprise, reportage ou drone</strong>, tout sera mis en oeuvre pour répondre à vos attentes et besoins. Avec des compétences en <strong>images, en son et en montage</strong>, faites appel à un professionnel polyvalent et à votre service.</p>
-                <a href="services.html" class="cta light border margin"><span>En savoir plus</span></a>
-            </div>
-            <div class="card glass border flex flexV">
-                <h2>Multimédia</h2>
-                <p>Vous cherchez à booster votre visibilité sur internet ? Faites appel à mes services multimédia. Infographiste, Webmaster ou Community manager, laissez moi vous proposer des solutions sur mesure pour assurer vos objectifs de communication : réseaux sociaux, site web, optimisation du référencement ou campagne de communication visuelle...</p>
-                <a href="services.html" class="cta light border margin"><span>En savoir plus</span></a>
+        <ul class="fullLibrary">
+            <li>
+                <h3>Photographie</h3>
+                <a href="#"><img src="tech/img/photo.webp" alt="Photographie"></a>
+                <p>Des mariages aux shooting photos, en passant par le corporate et l'évènementiel, faites appel à un photographe professionnel pour prendre des clichés uniques.</p>
+            </li>
+            <li>
+                <h3>Vidéo</h3>
+                <a href="#"><img src="tech/img/video.webp" alt="Vidéo"></a>
+                <p>Un vidéaste peut donner vie à votre vision à travers ses prestations vidéo. Transformer vos idées en images et créer des émotions et de l'engagement du public !</p>
+            </li>
+            <li>
+                <h3>Infographie</h3>
+                <a href="#"><img src="tech/img/fibonacci.webp" alt="Infographie"></a>
+                <p>Logos, Cartes de visite ou Affiches sont le coeur de vos besoins de communications. Alors faites appel à un infographiste pour booster l'efficacité de votre marque !</p>
+            </li>
+            <li>
+                <h3>Digital</h3>
+                <a href="#"><img src="tech/img/vscode.webp" alt="Digital"></a>
+                <p>Coder un site web vous semble compliqué ? Ne vous inquiétez pas et faites appel à un professionnel en SEO, développement et en CMS ;)</p>
+            </li>
+        </ul>
+
+
+        <!--    HIGHLIGHT     -->
+        <section>
+            <div class="highlight">
+                <div></div>
+                <div>
+                    <h2>FOCUS SUR...</h2>
+                    <p>MVB Production : Ces chansons là</p>
+                    <!--<a href="#" class="cta"><span>Découvrir</span></a>-->
+                </div>
             </div>
         </section>
 
-
-        <!--    A PROPOS    -->
-
-        <section class="backN flexV" id="aPropos">
-            <h2 class="light margin upper">Qui suis-je ?</h2>
-            <div class="flex flexH" id="propos">
-                <img class="border" src="tech/img/portrait-.webp" alt="Portrait de Léo PIMENTEL">
+        <!--    PORTRAIT    -->
+        <section id="portrait">
+            <div class="card">
+                <div>
+                    <img src="tech/img/portrait.webp" alt="Portrait de Léo PIMENTEL">
+                    <h2 class="gradient">Qui suis-je ?</h2>
+                </div>
                 <div>
                     <p>&emsp;&emsp;Je m’appelle <strong>Léo PIMENTEL</strong> et je suis un jeune entrepreneur. Ce que je fais ? Je suis dans la création de contenu. Je suis <strong>photographe, vidéaste</strong> mais je fait également de la <span>mise en page, de l'infographie et du développement de site web</span>.</p>
                     <p>&emsp;&emsp;Passionné d'audiovisuel depuis mon plus jeune âge, c'est à mes 14 ans que je commence réellement à découvrir le monde du cinéma. Depuis, je me suis auto-formé et j'ai la chance d'avoir pu réaliser de nombreux projets : <span>captations de spectacles, reportages photo, pub...</span></p>
                     <p>&emsp;&emsp;Je suis quelqu’un aux multiples compétences qui saura répondre à vos attentes. Vous voulez créer un site web ou développer votre présence digitale ? Vous cherchez un <strong>vidéaste</strong> pour votre entreprise ? Ou alors vous cherchez un <strong>photographe</strong> pour prendre des clichés d’un évènement qui vous tient à cœur ou organiser un shooting photo ?</p>
                     <p>Alors contactez moi, <span>je suis prêt à travailler avec vous !</span></p>
+                </div>
             </div>
         </section>
 
         <!--    CHIFFRES    -->
-        <section class="flex backN">
-            <div class="flexH" id="homeChiffres">
-                <div class="flexV">
-                    <p class="chiffre">5</p>
-                    <p class="chiffreDescr">années<br>d'expériences</p>
+        <section id="chiffres">
+            <div id="chiffreBlock">
+                <div>
+                    <p class="gradient">2</p>
+                    <p>années d'expérience</p>
                 </div>
-                <div class="separateur"></div>
-                <div class="flexV">
-                    <p class="chiffre">6+</p>
-                    <p class="chiffreDescr">captations <br>de spectacles</p>
+                <div>
+                    <p class="gradient">6+</p>
+                    <p>captation de spectacles</p>
                 </div>
-                <div class="separateur"></div>
-                <div class="flexV">
-                    <p class="chiffre">20+</p>
-                    <p class="chiffreDescr">projets <br>menés</p>
+                <div>
+                    <p class="gradient">20+</p>
+                    <p>projets accomplis</p>
                 </div>
-                <div class="separateur"></div>
-                <div class="flexV">
-                    <p class="chiffre">152.839</p>
-                    <p class="chiffreDescr">photos</p>
+                <div>
+                    <p class="gradient">152 839</p>
+                    <p>photos</p>
                 </div>
             </div>
         </section>
-
 
         <!--    CONFIANCE   -->
-        <section class="flex flexV backN">
-            <h2 class="margin upper">Ils m'ont fait confiance</h2>
-            <div class="flexH glass border wrap" id="confiance">
-                <img src="tech/logo/mvb.png" alt="MVB Production">
-                <img src="tech/logo/mairieCoutouvre.png" alt="Mairie de Coutouvre">
+        <section id="confiance">
+            <h2>Ils m'ont fait confiance</h2>
+            <div>
+                <a href="https://www.magicdanse.fr/" target="_blank"><img src="tech/logo/magicdanse.webp" alt="Logo de Magic Danse"></a>
+                <a href="https://www.roanne.fr" target="_blank"><img src="tech/logo/roanne.webp" alt="Logo de Roanne"></a>
+                <a href="http://www.coutouvre.fr" target="_blank"><img src="tech/logo/coutouvre.webp" alt="Logo de Coutouvre"></a>
+                <a href="https://www.facebook.com/maeetvalentin"><img src="tech/logo/mvb.webp" alt="Logo de MVB Production"></a>
             </div>
         </section>
 
-        <div class="espaceFooter"></div>
-        
         <footer>
-            <!--Vague Footer-->
-            <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
-                <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#794e37" />
-                <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#333333"/>
-            </svg>
-            
-            <!--Contenu Footer-->
-            <div id="footerLink">
-                <ul class="footerList">
-                    <li class="footerTitre">Photo</li>
-                    <li><a href="#">Shooting Photo</a></li>
-                    <li><a href="#">Évènementiel</a></li>
+            <div id="footerContact">
+                <h3>N'hésitez-plus et contactez-moi dès maintenant !</h3>
+                <a href="contact.html" class="cta"><span>Contact</span></a>
+            </div>
+            <div id="footerList">
+                <ul>
+                    <li class="footerTitle">Plan du site</li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="footerTitle">Photo</li>
+                    <li><a href="#">Shooting</a></li>
+                    <li><a href="#">Evènementiel</a></li>
                     <li><a href="#">Corporate</a></li>
                     <li><a href="#">Mariage</a></li>
                 </ul>
-                <ul class="footerList">
-                    <li class="footerTitre">Vidéo</li>
+                <ul>
+                    <li class="footerTitle">Vidéo</li>
                     <li><a href="#">Réalisation</a></li>
-                    <li><a href="#">Évènementiel</a></li>
+                    <li><a href="#">Evènementiel</a></li>
                     <li><a href="#">Montage</a></li>
                     <li><a href="#">Mariage</a></li>
                 </ul>
-                <ul class="footerList">
-                    <li class="footerTitre">Multimédia</li>
-                    <li><a href="#">Infographie</a></li>
-                    <li><a href="#">Création Site Web</a></li>
+                <ul>
+                    <li class="footerTitle">Multimédia</li>
+                    <li><a href="#">Création site web</a></li>
                     <li><a href="#">Community Management</a></li>
                 </ul>
             </div>
-            <div id="footerDescr">
+            <div id="footerLegal">
                 <p>2023 © LP - Léo PIMENTEL (EI)</p>
-                <p><a href="mentionslegales.html">Mentions Légales</a></p>
+                <a href="mentions-legales.html" class="underline">Mentions Légales</a>
             </div>
         </footer>
-        <div class="espaceNavBas"></div>
+    </main>
+    
     </body>
 </html>

@@ -1,64 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-		<meta charset="utf-8">
-		<title>Galerie Portfolio | LP</title>
-		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy, galerie, portfolio">
+        <meta charset="utf-8">
+		<title>Galerie Portfolio | Léo PIMENTEL</title>
+		<meta name="Keywords" content="Léo PIMENTEL, photographe, shooting, couple, portrait">
 		<meta name="author" content="Léo PIMENTEL">
 		<meta name="copyright" content="LP">
-        <link rel="preconnect" href="https://p.typekit.net">
+        <link rel="preconnect" href="https://fonts.gstatic.com/">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
-		<link rel="stylesheet" href="tech/style.css">
-		<link rel="icon" href="tech/favicon.svg">        
-	</head>
-
+		<link rel="stylesheet" href="tech/styles.css">
+        <link rel="icon" href="tech/favicon.svg"> 
+    </head>
     <body>
-        <!--    MENU NAVIGATION  -->
+
+        <!--    MENU NAV    -->
         <nav>
-            <div class="navMask">
-                <div class="navContenu">
-                    <div class="navLogo">
-                        <a href="index.html"><img src="tech/logo/logo.webp" alt="Logo LP"></a>
-                    </div>
-                    <div class="navListe">
-                        <ul>
-                            <li><div class="navBouton"><a href="index.html"><img src="tech/logo/home.webp" alt="" class="navIcon">Accueil</a></div></li>
-                            <li><div class="navBouton" style="border-bottom: solid #794e37;"><a href="galerie.html" style="color: #794e37;"><img src="tech/logo/realC.webp" alt="" class="navIcon">Galerie</a></div></li>
-                            <li><div class="navBouton"><a href="services.html"><img src="tech/logo/services.webp" alt="" class="navIcon">Services</a></div></li>
-                            <li><div class="navBouton"><a href="contact.html"><img src="tech/logo/contact.webp" alt="" class="navIcon">Contact</a></div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="navEspaceH"></div> <!--Espace pour menu-->
+            <ul id="barreSup">
+                <li>
+                    <a href="#" class="ongletNav"><img src="tech/logo/logoBlanc.webp" alt="Logo de l'entreprise"></a>  
+                </li>
+            </ul>
+            <ul id="barreInf">
+                <li>
+                    <a href="index.html" class="ongletNav underline">Accueil</a>  
+                </li>
+                <li>
+                    <a href="services.html" class="ongletNav underline">Services</a>  
+                </li>
+                <li>
+                    <div id="espaceCentral"></div>
+                </li>
+                <li>
+                    <a href="galerie.html" class="ongletNav underline">Galerie</a>  
+                </li>
+                <li>
+                    <a href="contact.html" class="ongletNav underline">Contact</a>  
+                </li>
+            </ul>
+        </nav>  
+    <main>
+        
 
-        <!--    HERO HEADER     -->
-        <header class="midscreen flex" id="galerieHeader">
-            <div class="flex flexV">
-                <h1 id="h1Home">Léo PIMENTEL<br><span>Galerie Portfolio</span></h1>
-                <div class="flex flexH" id="lienHeader">
-                        <a href="contact.html" class="cta light border"><span>Contact</span></a>
-                </div>
-            </div>
-        </header>
+        <!--    DIAG HEADER     -->
+        <section id="diagHeader" style="height: 60%">
+            <img src="tech/img/galerieBan2.webp" alt="Bannière photo">
+        </section>
 
-        <!--    GALERIE PHOTOS  -->
-        <section class="flex flexH" id="galerie">
-            <div class="flexV">
+        <div id="landingAccr" style="min-height: 30%">
+            <h1>Galerie</h1>
+        </div>
+
+
+        <!--    GALERIE     -->
+        <section id="galerie">
+            <div>
                 <img src="tech/galerie/a.webp" alt="Glace Eternelle">
                 <img src="tech/galerie/m.webp" alt="Trace de vie">
                 <img src="tech/galerie/pousse.webp" alt="Pousse de vie">
                 <img src="tech/galerie/mvbV.webp" alt="MVB Production">
             </div>
-            <div class="flexV" id="midCol">
+            <div id="midCol">
                 <img src="tech/galerie/b.webp" alt="Leadenhall">
                 <img src="tech/galerie/k.webp" alt="Olympus">
                 <img src="tech/galerie/cote.webp" alt="Cote">
                 <img src="tech/galerie/bordLoire.webp" alt="Bord de Loire">
                 
             </div>
-            <div class="flexV">
+            <div>
                 <img src="tech/galerie/c.webp" alt="Montains">
                 <img src="tech/galerie/n.webp" alt="Fleur de courgette">
                 <img src="tech/galerie/mvbM.webp" alt="MVB Production">
@@ -66,43 +74,45 @@
             </div>
         </section>
 
-        <div class="espaceFooter"></div>
-        
         <footer>
-            <!--Vague Footer-->
-            <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
-                <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#794e37" />
-                <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#333333"/>
-            </svg>
-            
-            <!--Contenu Footer-->
-            <div id="footerLink">
-                <ul class="footerList">
-                    <li class="footerTitre">Photo</li>
-                    <li><a href="#">Shooting Photo</a></li>
-                    <li><a href="#">Évènementiel</a></li>
-                    <li><a href="#">Corporate</a></li>
-                    <li><a href="#">Mariage</a></li>
+            <div id="footerContact">
+                <h3>N'hésitez-plus et contactez-moi dès maintenant !</h3>
+                <a href="#" class="cta"><span>Contact</span></a>
+            </div>
+            <div id="footerList">
+                <ul>
+                    <li class="footerTitle">Plan du site</li>
+                    <li>Accueil</li>
+                    <li>Services</li>
+                    <li>Galerie</li>
+                    <li>Contact</li>
                 </ul>
-                <ul class="footerList">
-                    <li class="footerTitre">Vidéo</li>
-                    <li><a href="#">Réalisation</a></li>
-                    <li><a href="#">Évènementiel</a></li>
-                    <li><a href="#">Montage</a></li>
-                    <li><a href="#">Mariage</a></li>
+                <ul>
+                    <li class="footerTitle">Photo</li>
+                    <li>Shooting</li>
+                    <li>Évènementiel</li>
+                    <li>Corporate</li>
+                    <li>Mariage</li>
                 </ul>
-                <ul class="footerList">
-                    <li class="footerTitre">Multimédia</li>
-                    <li><a href="#">Infographie</a></li>
-                    <li><a href="#">Création Site Web</a></li>
-                    <li><a href="#">Community Management</a></li>
+                <ul>
+                    <li class="footerTitle">Vidéo</li>
+                    <li>Réalisation</li>
+                    <li>Évènementiel</li>
+                    <li>Montage</li>
+                    <li>Mariage</li>
+                </ul>
+                <ul>
+                    <li class="footerTitle">Multimédia</li>
+                    <li>Création site web</li>
+                    <li>Community Management</li>
                 </ul>
             </div>
-            <div id="footerDescr">
+            <div id="footerLegal">
                 <p>2023 © LP - Léo PIMENTEL (EI)</p>
-                <p><a href="mentionslegales.html">Mentions Légales</a></p>
+                <a href="mentions-legales.html" class="underline">Mentions Légales</a>
             </div>
         </footer>
-        <div class="espaceNavBas"></div>
+    </main>
+    
     </body>
 </html>

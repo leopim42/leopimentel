@@ -1,100 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-		<meta charset="utf-8">
-		<title>Galerie Portfolio | LP</title>
-		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy, galerie, portfolio">
+        <meta charset="utf-8">
+		<title>Contact | LP</title>
+		<meta name="Keywords" content="Léo PIMENTEL, photographe, vidéaste, Roanne, Vichy">
 		<meta name="author" content="Léo PIMENTEL">
 		<meta name="copyright" content="LP">
-        <link rel="preconnect" href="https://p.typekit.net">
+        <link rel="preconnect" href="https://fonts.gstatic.com/">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
-		<link rel="stylesheet" href="tech/style.css">
-		<link rel="icon" href="tech/favicon.svg">        
-	</head>
-
+		<link rel="stylesheet" href="tech/styles.css">
+        <link rel="icon" href="tech/favicon.svg"> 
+    </head>
     <body>
-        <!--    MENU NAVIGATION  -->
-        <nav>
-            <div class="navMask">
-                <div class="navContenu">
-                    <div class="navLogo">
-                        <a href="index.html"><img src="tech/logo/logo.webp" alt="Logo LP"></a>
-                    </div>
-                    <div class="navListe">
-                        <ul>
-                            <li><div class="navBouton"><a href="index.html"><img src="tech/logo/home.webp" alt="" class="navIcon">Accueil</a></div></li>
-                            <li><div class="navBouton"><a href="galerie.html"><img src="tech/logo/real.webp" alt="" class="navIcon">Galerie</a></div></li>
-                            <li><div class="navBouton"><a href="services.html"><img src="tech/logo/services.webp" alt="" class="navIcon">Services</a></div></li>
-                            <li><div class="navBouton" style="border-bottom: solid #794e37;"><a href="contact.html" style="color: #794e37;"><img src="tech/logo/contactC.webp" alt="" class="navIcon">Contact</a></div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="navEspaceH"></div> <!--Espace pour menu-->
 
-        <section class="flex flexH" id="contact">
-            <div class="flex" id="contactBan">
-                <h1>Contact</h1>
-            </div>
-            <div class="flex" id="contactLink">
-                <div class="flexV border glass" id="contactCard">
-                    <a href="https://www.instagram.com/lp_leopimentel/" target="_blank">
-                        <img src="tech/logo/instagramC.webp" alt="Instagram">
-                        <p>lp_leopimentel</p>
-                    </a>
-                    <a href="https://www.facebook.com/LPleopimentel" target="_blank">
-                        <img src="tech/logo/facebookC.webp" alt="Facebook">
-                        <p>LP - Léo PIMENTEL</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/leopimentel27/" target="_blank">
-                        <img src="tech/logo/linkedinC.webp" alt="LinkedIn">
-                        <p>Léo Pimentel</p>
-                    </a>
-                    <a href="#"></a>
-                    <a href="mailto:leo.pim@hotmail.fr">leo.pim@hotmail.fr</a>
-                    <a href="#">07 82 98 63 88</a>
+        <!--    MENU NAV    -->
+        <nav>
+            <ul id="barreSup">
+                <li>
+                    <a href="#" class="ongletNav"><img src="tech/logo/logoBlanc.webp" alt="Logo de l'entreprise"></a>  
+                </li>
+            </ul>
+            <ul id="barreInf">
+                <li>
+                    <a href="index.html" class="ongletNav underline">Accueil</a>  
+                </li>
+                <li>
+                    <a href="services.html" class="ongletNav underline">Services</a>  
+                </li>
+                <li>
+                    <div id="espaceCentral"></div>
+                </li>
+                <li>
+                    <a href="galerie.html" class="ongletNav underline">Galerie</a>  
+                </li>
+                <li>
+                    <a href="contact.html" class="ongletNav underline">Contact</a>  
+                </li>
+            </ul>
+        </nav>  
+    <main>
+        
+
+        <!--    CONTACT    -->
+        <section id="contact">
+            <div class="card">
+                <img src="tech/img/portrait.webp" alt="Portrait de Léo PIMENTEL">
+                <div>
+                    <h2>Léo PIMENTEL</h2>
+                    <p><a href="tel:0782986388" class="underline">+33 7 82 98 63 88</a><a href="mailto:leo.pim@hotmail.fr" class="underline">leo.pim@hotmail.fr</a></p>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/LPleopimentel" target="_blank" class="cta"><span>Facebook</span></a>
+                    <a href="https://www.instagram.com/lp_leopimentel/" target="_blank" class="cta"><span>Instagram</span></a>
+                    <a href="https://www.linkedin.com/in/leopimentel27/" target="_blank" class="cta"><span>LinkedIn</span></a>
                 </div>
             </div>
         </section>
 
-        <div class="espaceFooter"></div> <!--Espace pour menu-->
-        
+
         <footer>
-            <!--Vague Footer-->
-            <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
-                <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#794e37" />
-                <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#333333"/>
-            </svg>
-            
-            <!--Contenu Footer-->
-            <div id="footerLink">
-                <ul class="footerList">
-                    <li class="footerTitre">Photo</li>
-                    <li><a href="#">Shooting Photo</a></li>
-                    <li><a href="#">Évènementiel</a></li>
+            <div id="footerContact">
+                <h3>N'hésitez-plus et contactez-moi dès maintenant !</h3>
+                <a href="#" class="cta"><span>Contact</span></a>
+            </div>
+            <div id="footerList">
+                <ul>
+                    <li class="footerTitle">Plan du site</li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="footerTitle">Photo</li>
+                    <li><a href="#">Shooting</a></li>
+                    <li><a href="#">Evènementiel</a></li>
                     <li><a href="#">Corporate</a></li>
                     <li><a href="#">Mariage</a></li>
                 </ul>
-                <ul class="footerList">
-                    <li class="footerTitre">Vidéo</li>
+                <ul>
+                    <li class="footerTitle">Vidéo</li>
                     <li><a href="#">Réalisation</a></li>
-                    <li><a href="#">Évènementiel</a></li>
+                    <li><a href="#">Evènementiel</a></li>
                     <li><a href="#">Montage</a></li>
                     <li><a href="#">Mariage</a></li>
                 </ul>
-                <ul class="footerList">
-                    <li class="footerTitre">Multimédia</li>
-                    <li><a href="#">Infographie</a></li>
-                    <li><a href="#">Création Site Web</a></li>
+                <ul>
+                    <li class="footerTitle">Multimédia</li>
+                    <li><a href="#">Création site web</a></li>
                     <li><a href="#">Community Management</a></li>
                 </ul>
             </div>
-            <div id="footerDescr">
+            <div id="footerLegal">
                 <p>2023 © LP - Léo PIMENTEL (EI)</p>
-                <p><a href="mentionslegales.html">Mentions Légales</a></p>
+                <a href="mentions-legales.html" class="underline">Mentions Légales</a>
             </div>
         </footer>
-        <div class="espaceNavBas"></div>
+    </main>
+    
     </body>
 </html>
