@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body onload="audio()">
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap6a.png" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Réussite totale !</h2>
+                    <p>Félicitation ! Vous l'avez fait : l'Homme à marcher sur la Lune ! Votre nom restera gravé dans les mémoires ! Votre courage et votre instinct ont permis de faire de vous un héros ! </p>
+                    <div>
+                        <a href="index.html">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+        function audio(){
+    const voix = new Audio("audio/voix/fin1.wav");
+    voix.play();
+}
+</script>
+</html>

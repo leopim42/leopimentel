@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/apollo.ico">
     </head>
-    <body>
+    <body onload="audio()">
         <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
         <main>
             <div id="contenu">
@@ -15,11 +15,17 @@
                     <h2>Descente lunaire</h2>
                     <p>Votre rêve s'approche à vue d'oeil. Le module se pose, et vous sortez marcher sur la Lune</p>
                     <div>
-                        <a href="chap5.html" id="choix1">Partir en expédition avec vos équipiers</a>
-                        <a href="chap5.html">Rester surveiller les radars par sécurité</a>
+                        <a href="chap7a.html" id="choix1">Partir en expédition avec vos équipiers</a>
+                        <a href="chap7b.html">Rester surveiller les radars par sécurité</a>
                     </div>
                 </div>
             </div>
         </main>
     </body>
+    <script>
+                        function audio(){
+                    const voix = new Audio("audio/voix/chap6a.wav");
+                    voix.play();
+                }
+    </script>
 </html>

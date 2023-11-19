@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/apollo.ico">
     </head>
-    <body>
+    <body onload="audio()">
         <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
         <main>
             <div id="contenu">
@@ -13,7 +13,7 @@
             <div id="interaction">
                 <div>
                     <h2>Phase de décollage</h2>
-                    <p>C'est parti, les préparatifs sont ok, l'équipage prêt à parit, vous prenez les commandes. 10...9...8...7..6...5...4...3...2...1... Décollage !</p>
+                    <p>C'est parti, les préparatifs sont ok, l'équipage prêt à partir, vous prenez les commandes. 10...9...8...7..6...5...4...3...2...1... Décollage !</p>
                     <div>
                         <a href="chap4.html" id="choix1">C'est parti !</a>
                     </div>
@@ -26,6 +26,10 @@
                     sessionStorage.setItem("maintenance", "yes");
 
                     window.location.href="chap3.html";
+                }
+                function audio(){
+                    const voix = new Audio("audio/voix/chap3.wav");
+                    voix.play();
                 }
         </script>
     </body>

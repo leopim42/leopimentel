@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body onload="testMaintenance(), audio()">
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap7a.jpg" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Pluie de météorites</h2>
+                    <p>Vous vous baladez dans le rover lunaire, mais une pluie d'astéroide s'abat sur le module !</p>
+                    <div>
+                        <a id="choix1">Je l'ai vérifié, j'ai confiance en sa solidité</a>
+                        <a href="fin2.html">Prions pour que cela n'est rien cassé.</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+        function testMaintenance(){
+                let testMaintenance = sessionStorage.getItem("maintenance");
+                let boutonMaintenance = document.getElementById("choix1");
+
+                if (testMaintenance == null){
+                    boutonMaintenance.style.opacity = "0.5";
+                }
+                else{
+                    boutonMaintenance.setAttribute('href','chap8.html');
+                }
+            }
+
+        function audio(){
+    const voix = new Audio("audio/voix/chap7a.wav");
+    voix.play();
+}
+</script>
+</html>

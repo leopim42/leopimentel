@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/apollo.ico">
     </head>
-    <body>
+    <body onload="audio()">
         <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
         <main>
             <div id="contenu">
@@ -13,7 +13,7 @@
             <div id="interaction">
                 <div>
                     <h2>Sur le pas de tir</h2>
-                    <p>Vous arrivez sur le pas de tir. Demain, vous partez pour l'espace ! Quelle belle fusée, voici Saturn V, la dernière née des ingénieurs de la Nasa. Mais c'est aussi sa première expédition aussi chargée. J'espère pour vous qu'elle tiendra la route.</p>
+                    <p>Vous arrivez sur le pas de tir. Demain, vous partez pour l'espace ! Voici Saturn V, la dernière née des ingénieurs de la Nasa. J'espère qu'elle tiendra la route.</p>
                     <div>
                         <a href="chap3.html" onclick="maintenance()" id="choix1">Ne pas faire confiance aux ingénieurs</a>
                         <a href="chap3.html">Se préparer à partir</a>
@@ -27,6 +27,11 @@
                     sessionStorage.setItem("maintenance", "yes");
 
                     window.location.href="chap3.html";
+                }
+
+                function audio(){
+                    const voix = new Audio("audio/voix/chap2.wav");
+                    voix.play();
                 }
         </script>
     </body>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body onload="audio()">
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap9.png" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Retour sur Terre</h2>
+                    <p>En orbite avec le vaisseau, le module et l'équipage il est temps de rentrer.</p>
+                    <div>
+                        <a href="chap10.html" id="choix1">Suivre le plan initial</a>
+                        <a href="fin2.html">Suivre votre instinct et modifier la trajectoire</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+        function audio(){
+    const voix = new Audio("audio/voix/chap9.wav");
+    voix.play();
+}
+</script>
+</html>

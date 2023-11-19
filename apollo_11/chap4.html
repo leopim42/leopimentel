@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/apollo.ico">
     </head>
-    <body onload="testConfiance()">
+    <body onload="testConfiance(), audio()">
         <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
         <main>
             <div id="contenu">
@@ -13,7 +13,7 @@
             <div id="interaction">
                 <div>
                     <h2>Orbite de la Terre</h2>
-                    <p>Nous sommes désormais en orbite autour de la Terre. D'ici, la planète bleue est magnifique. Le premier étage est séparé, il ne reste plus qu'à aller sur la Lune. La trajectoire de la Nasa est rentrée dans l'ordinateur, mais votre instinct vous pousse à utiliser une nouvelle trajectoire, potentiellement plus courte. Pour cela, vous aurez besoin de la confiance de votre équipage</p>
+                    <p>En orbite autour de la Terre. D'ici, la planète bleue est magnifique. La trajectoire de la Nasa est rentrée dans l'ordinateur, mais votre instinct vous pousse à utiliser une nouvelle trajectoire, potentiellement plus courte. Pour cela, vous aurez besoin de la confiance de votre équipage</p>
                     <div>
                         <a id="choix1">Suivre votre instinct et calculer une nouvelle trajectoire</a>
                         <a href="chap5.html">Poursuivre la trajectoire actuelle</a>
@@ -39,6 +39,11 @@
                 sessionStorage.setItem("ecoCarburant", "surplus");
                 alert("Ce changement était risqué, mais vous avez économisés beaucoup de carburants. Cela pourrait être utile.");
             }
+
+            function audio(){
+                    const voix = new Audio("audio/voix/chap4.wav");
+                    voix.play();
+                }
         </script>
     </body>
 </html>

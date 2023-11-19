@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/apollo.ico">
     </head>
-    <body>
+    <body onload="audio()">
         <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
         <main>
             <div id="contenu">
@@ -13,12 +13,18 @@
             <div id="interaction">
                 <div>
                     <h2>Rotation lunaire</h2>
-                    <p>On reste sur le plan initial. Rendez-vous dans 2h après la rotation lunaire !</p>
+                    <p>On reste sur le plan initial. Messieurs, rendez-vous dans 2h après les 2 rotation lunaire !</p>
                     <div>
-                        <a href="chap5.html" id="choix1">Attendre le retour du module</a>
+                        <a href="chap9.html" id="choix1">Attendre le retour du module</a>
                     </div>
                 </div>
             </div>
         </main>
     </body>
+    <script>
+        function audio(){
+    const voix = new Audio("audio/voix/chap6b.wav");
+    voix.play();
+}
+</script>
 </html>

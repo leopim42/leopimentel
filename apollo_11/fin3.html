@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body onload="audio()">
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap6a.png" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Réussite partielle</h2>
+                    <p>Les parachutes ont amortis le choc, mais le crash était très violent. Même si vous avez réussi votre mission, vous en garderez des séquelles toute votre vie...</p>
+                    <div>
+                        <a href="chap1.html">Recommencer l'aventure</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+        function audio(){
+    const voix = new Audio("audio/voix/fin3.wav");
+    voix.play();
+}
+</script>
+</html>

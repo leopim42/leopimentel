@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body onload="audio(), testCarburant()">
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap10.jpg" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Atterissage d'urgence</h2>
+                    <p>Oh non, la rentrée sur Terre ne se passe pas comme prévu : vous êtes beaucoup trop rapide !</p>
+                    <div>
+                        <a id="choix1">Utiliser le carburant supplémentaire pour faire une contre-poussée</a>
+                        <a href="fin3.html">Déployer les parachutes plus tôt que prévu</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+        function testCarburant(){
+                let testCarbu = sessionStorage.getItem("ecoCarburant");
+                let boutonCarbu = document.getElementById("choix1");
+
+                if (testCarbu == null){
+                    boutonCarbu.style.opacity = "0.5";
+                }
+                else{
+                    boutonCarbu.setAttribute('href','chap5.html');
+                }
+            }
+
+        function audio(){
+    const voix = new Audio("audio/voix/chap10.wav");
+    voix.play();
+}
+</script>
+</html>
