@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Pixelify+Sans:wght@400&display=swap');
 
 
 *{
     padding: 0;
     margin: 0;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 main{
     width: 100%;
@@ -51,39 +51,40 @@ main{
 
     width: 80%;
     margin: auto;
-
-    background-color: #30618e;
-    padding: 1.5em;
+    padding: .8em 4em;
 }
+#interaction div:nth-child(1){
+    border: solid white 0.1em;
+}
+
 #interaction div *{
     margin: 1em auto;
     color: white;
 }
 #interaction p{
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5em;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.35em;
 }
 #interaction h2{
-    font-weight: 800;
+    font-family: 'Pixelify Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 #interaction a{
     text-decoration: none;
-    background-color: white;
-    color: #30618e;
+    color: white;
     font-weight: 800;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 1.5em;
-    border-radius: 1em;
     transition-duration: 0.5s;
-    box-shadow: 0.2em 0.2em 1em black;
     text-align: center;
 }
 
 #interaction a:hover{
     transform: scale(1.2);
+    box-shadow: 0.2em 0.2em 1em black;
+    border: solid 0.1em white;
 }

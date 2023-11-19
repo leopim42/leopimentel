@@ -15,7 +15,7 @@
                     <h2>Réussite totale !</h2>
                     <p>Félicitation ! Vous l'avez fait : l'Homme à marcher sur la Lune ! Votre nom restera gravé dans les mémoires ! Votre courage et votre instinct ont permis de faire de vous un héros ! </p>
                     <div>
-                        <a href="index.html">Retour à l'accueil</a>
+                        <a href="index.html" onclick="reset()">Retour à l'accueil</a>
                     </div>
                 </div>
             </div>
@@ -26,5 +26,9 @@
     const voix = new Audio("audio/voix/fin1.wav");
     voix.play();
 }
+
+    function reset(){
+        sessionStorage.clear();
+    }
 </script>
 </html>

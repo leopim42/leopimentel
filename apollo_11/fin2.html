@@ -15,7 +15,7 @@
                     <h2>Réussite retour imposible</h2>
                     <p>Votre excès de zèle vous aura coûté la vie. N'oubliez jamais cela : une aventure sur la Lune est un pari très risqué. Mais qui sait, dans une autre vie vous auriez sûrement fait mieux.</p>
                     <div>
-                        <a href="chap1.html">Recommencer l'aventure</a>
+                        <a href="chap1.html" onclick="reset()">Recommencer l'aventure</a>
                     </div>
                 </div>
             </div>
@@ -26,5 +26,9 @@
     const voix = new Audio("audio/voix/fin2.wav");
     voix.play();
 }
+
+function reset(){
+        sessionStorage.clear();
+    }
 </script>
 </html>
