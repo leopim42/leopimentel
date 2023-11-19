@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("img/milkyway.jpg");
+    background-size: cover;
+}
+
+#logo{
+    position: fixed;
+    width: 6%;
+    padding: 0.5em 1em 1em 0.5em;
+    background-color: #30618e;
+    border-radius: 0 0 1.5em 0;
+}
+
+#contenu{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+}
+#contenu img{
+    margin: auto;
+    width: 85%;
+    height: 85%;
+    border-radius: 1em;
+}
+
+#interaction{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+}
+#interaction div{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    margin: auto;
+
+    background-color: #30618e;
+    padding: 1.5em;
+}
+#interaction div *{
+    margin: 1em auto;
+    color: white;
+}
+#interaction p{
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 1.2em;
+}
+#interaction h2{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#interaction a{
+    text-decoration: none;
+    background-color: white;
+    color: #30618e;
+    font-weight: 800;
+    font-size: 1.1em;
+    padding: 1.5em;
+    border-radius: 1em;
+    transition-duration: 0.5s;
+    box-shadow: 0.2em 0.2em 1em black;
+    text-align: center;
+}
+
+#interaction a:hover{
+    transform: scale(1.2);
+}

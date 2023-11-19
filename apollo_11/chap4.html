@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body onload="testConfiance()">
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap4.png" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Orbite de la Terre</h2>
+                    <p>Nous sommes désormais en orbite autour de la Terre. D'ici, la planète bleue est magnifique. Le premier étage est séparé, il ne reste plus qu'à aller sur la Lune. La trajectoire de la Nasa est rentrée dans l'ordinateur, mais votre instinct vous pousse à utiliser une nouvelle trajectoire, potentiellement plus courte. Pour cela, vous aurez besoin de la confiance de votre équipage</p>
+                    <div>
+                        <a id="choix1">Suivre votre instinct et calculer une nouvelle trajectoire</a>
+                        <a href="chap5.html">Poursuivre la trajectoire actuelle</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            function testConfiance(){
+                let testDoute = sessionStorage.getItem("douteEquipage");
+                let boutonDoute = document.getElementById("choix1");
+
+                if (testDoute != null){
+                    boutonDoute.style.opacity = "0.5";
+                }
+                else{
+                    boutonDoute.setAttribute('href','chap5.html');
+                    boutonDoute.setAttribute('onclick','ecoCarburant()');
+                }
+            }
+
+            function ecoCarburant(){
+                sessionStorage.setItem("ecoCarburant", "surplus");
+                alert("Ce changement était risqué, mais vous avez économisés beaucoup de carburants. Cela pourrait être utile.");
+            }
+        </script>
+    </body>
+</html>

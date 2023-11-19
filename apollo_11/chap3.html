@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body>
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap3.png" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Phase de décollage</h2>
+                    <p>C'est parti, les préparatifs sont ok, l'équipage prêt à parit, vous prenez les commandes. 10...9...8...7..6...5...4...3...2...1... Décollage !</p>
+                    <div>
+                        <a href="chap4.html" id="choix1">C'est parti !</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            function maintenance(){
+                    alert("Les ingénieurs vous prennes de haut, mais votre vérification à en effet résoud quelques problèmes. Cela pourrais s'avérer utile pour la suite.");
+                    sessionStorage.setItem("maintenance", "yes");
+
+                    window.location.href="chap3.html";
+                }
+        </script>
+    </body>
+</html>

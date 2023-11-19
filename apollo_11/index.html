@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div id="contenu">
+                <img src="img/img.jpg" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Titre</h2>
+                    <p>Contenu Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id tempora quos corporis eligendi tempore inventore libero nobis corrupti ex obcaecati eius odio in, voluptate minima expedita quia unde mollitia vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum esse, facilis accusamus temporibus sequi quae quis! Quasi saepe optio magnam suscipit explicabo placeat cum, quibusdam rem maxime eligendi voluptas.</p>
+                    <div>
+                        <a href="#" id="choix1">Choix 1</a>
+                        <a href="">Choix 2</a>
+                    </div>
+                    </div>
+            </div>
+        </main>
+        <script>
+            window.onload = () => {
+                let nom = "Léo"
+                let choix1 = document.getElementById("choix1");
+                choix1.textContent = nom;
+                choix1.setAttribute('href','https://www.youtube.fr');
+
+                sessionStorage.setItem("nom", nom)
+            }
+        </script>
+    </body>
+</html>

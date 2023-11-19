@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Apollo 11</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/apollo.ico">
+    </head>
+    <body>
+        <img src="img/apollo.ico" alt="Logo Apollo" id="logo">
+        <main>
+            <div id="contenu">
+                <img src="img/chap1.png" alt="Image">
+            </div>
+            <div id="interaction">
+                <div>
+                    <h2>Vous êtes le pilote</h2>
+                    <p>Vous êtes Michael Collins, pilote pour la NASA. Ce matin, vous avez été appellé par Houston pour mener une première mondiale : marcher sur la Lune. Ou du moins, ammener des astronautes sur la Lune. On vous a transmis le plan de vol. Tout a l’air correct. On vous demande votre avis sur l’équipage. L’un d’entre eux est votre ancien coéquipier avec qui vous avez eu un différent. Cela pourrait poser un problème.</p>
+                    <div>
+                        <a href="chap2.html" onclick="douteEquipage()" id="choix1">Modifier l'équipage</a>
+                        <a href="chap2.html" id="choix2">Approuver l'équipage</a>
+                    </div>
+                    </div>
+            </div>
+        </main>
+        <script>
+            function douteEquipage(){
+                    alert("L'équipage n'a pas apprécié et le doute s'installe");
+                    sessionStorage.setItem("douteEquipage", "doute");
+
+                    window.location.href="chap2.html";
+                }
+        </script>
+    </body>
+</html>
