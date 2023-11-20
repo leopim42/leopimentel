@@ -30,6 +30,13 @@
                 function audio(){
                     const voix = new Audio("audio/voix/chap3.wav");
                     voix.play();
+                    setTimeout(launch,19000);
+                }
+                function launch(){
+                    const amb = new Audio("audio/ambiance/launch.mp3");
+                    amb.play();
+                    amb.loop = true;
+                    amb.volume = 0.3;
                 }
         </script>
     </body>

@@ -38,6 +38,11 @@
         function audio(){
     const voix = new Audio("audio/voix/chap10.wav");
     voix.play();
+
+    const amb = new Audio("audio/ambiance/warning.mp3");
+                    amb.play();
+                    amb.loop = true;
+                    amb.volume = 0.03;
 }
 </script>
 </html>

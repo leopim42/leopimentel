@@ -32,6 +32,12 @@
                 function audio(){
                     const voix = new Audio("audio/voix/chap2.wav");
                     voix.play();
+
+                    const amb = new Audio("audio/ambiance/localTech.mp3");
+                    amb.play();
+                    amb.loop = true;
+                    amb.volume = 0.02;
+
                 }
         </script>
     </body>
